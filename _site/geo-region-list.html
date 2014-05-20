@@ -38,112 +38,91 @@
         </ul>-->
       </header>
       <section>
-        <h1>Market Research Library API</h1>
+        <h2>Controlled Geo Region Terms</h2>
 
-<p>This API provides metadata for country and industry reports that are produced by ITA’s trade experts and are available in ITA’s online market research library.  Categorized by country and industry, these reports include:</p>
+<p>The following terms are the only <strong>geo_region</strong> and <strong>geo_subregion</strong> terms that the API will accept:</p>
 
-<ul>
-<li>Market Research Reports</li>
-<li>Best Market Reports</li>
-<li>Country Commercial Guides</li>
-</ul>
-
-
-<h2>Resource URL</h2>
-
-<pre><code>http://api.trade.gov/market_research_library/search
-</code></pre>
-
-<h2>Search Parameters</h2>
-
-<h3>keyword</h3>
-
-<p>Returns market research reports for a match in the description or title fields.</p>
-
-<pre><code>http://api.trade.gov/market_research_library/search?q=&lt;keyword&gt;
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/market_research_library/search?q=modernization
-</code></pre>
-
-<h3>countries</h3>
-
-<p>Returns office locations based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.</p>
-
-<pre><code>http://api.trade.gov/market_research_library/search?countries=&lt;country name&gt;
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/market_research_library/search.json?countries=MX
-</code></pre>
-
-<h3>industry</h3>
-
-<p>Returns market research reports for a specific <a href="/industry-list-market-research-library.html">industry</a></p>
-
-<pre><code>http://api.trade.gov/market_research_library/search.json?industry=&lt;industry name&gt;
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/market_research_library/search.json?industry=agribusiness
-</code></pre>
-
-<h3>size + offset</h3>
-
-<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/market_research_library/search?country=BR&amp;size=1&amp;offset=1
-</code></pre>
-
-<h2>Return Values</h2>
-
-<table>
-<thead>
+<table border="0">
 <tr>
-<th> Field           </th>
-<th> Description                                                     </th>
+<th>geo_region</th>
+<th>geo_subregion</th>
 </tr>
-</thead>
-<tbody>
+
 <tr>
-<td> id              </td>
-<td> Unique identifier assigned to the event                         </td>
-</tr>
+  <td>**Africa**</td>
+  <td>North Africa</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>Sub-Saharan Africa</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>West Africa</td>
+ </tr>
+
 <tr>
-<td> countries       </td>
-<td> Country category(ies) assigned to the report                    </td>
-</tr>
+  <td>**Asia**</td>
+  <td>Asia Pacific</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>Central Asia</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>East Asia</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>South Asia</td>
+ </tr>
+ 
+ <tr>
+  <td></td>
+  <td>Southeast Asia</td>
+ </tr>
+
 <tr>
-<td> description     </td>
-<td> Abstract of the report’s content                                </td>
-</tr>
+  <td>**Caribbean**</td>
+  <td></td>
+ </tr>
+
 <tr>
-<td> expiration_date </td>
-<td> Date when the report is no longer valid                         </td>
-</tr>
+  <td>**Central America**</td>
+  <td></td>
+ </tr>
+
 <tr>
-<td> industry        </td>
-<td> Industry category assigned to the report                        </td>
-</tr>
+  <td>**Europe**</td>
+  <td></td>
+ </tr>
+
 <tr>
-<td> report_type     </td>
-<td> The report type can either be CCG, Best Market Report, or Market Research Report</td>
-</tr>
+  <td>**Middle East**</td>
+  <td></td>
+ </tr>
+
 <tr>
-<td> title           </td>
-<td> Report title  (default sort)                                    </td>
-</tr>
+  <td>**North America**</td>
+  <td></td>
+ </tr>
+
 <tr>
-<td> url             </td>
-<td> URL for the report                                              </td>
-</tr>
-</tbody>
+  <td>**Oceania**</td>
+  <td></td>
+ </tr>
+
+<tr>
+  <td>**South America**</td>
+  <td></td>
+ </tr>
+
 </table>
 
 
