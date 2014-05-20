@@ -26,7 +26,11 @@ h1 {
 }
 
 h2 {
-  font-size:14px; font-style:italic;color:#777777
+  font-size:14px; font-style:italic;color:#777777;
+  border-bottom:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding-bottom:20px;
+    
 }
 
 h3, h4, h5, h6 {
