@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Trade Developer Portal</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="/devportal"><h1>Trade Developer Portal</h1>
+        <h2>Enabling U.S. Exports Through Open Data</h2></a>
+        <p></p>
+		<h3>Available APIs</h3>
+        <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
+        <p class="view"><a href="ita-office-locations.html">Office & Centers</a></p>
+        <p class="view"><a href="trade-events.html">Trade Events</a></p>
+        <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
+		
+		<h3>Additional Resources</h3>
+		<p class="view"><a href="https://github.com/ajsingh273/devportal">About Our APIs</a></p>
+        <p class="view"><a href="https://github.com/ajsingh273/devportal">What's Possible</a></p>
+        <p class="view"><a href="https://github.com/ajsingh273/devportal">Apps for Exporters</a></p>
+        <p class="view"><a href="https://github.com/ajsingh273/devportal">FAQs</a></p>
+        <p class="view"><a href="https://github.com/ajsingh273/devportal">Change Log</a></p>
+
+        <!--<ul>
+          <li><a href="https://github.com/ajsingh273/devportal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ajsingh273/devportal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ajsingh273/devportal">View On <strong>GitHub</strong></a></li>
+        </ul>-->
+      </header>
+      <section>
+        <h1>Trade News &amp; Articles</h1>
+
+<p>The Trade News &amp; Articles API provides in-depth news and articles written by Trade Specialists working in the Federal government.  The news and articles are categorized by industry, country, and topic area.  Developers can use this API to provide exporters with the latest insights into their industry and into the countries with which they would like to do business.</p>
+
+<h2>Resource URL</h2>
+
+<pre><code>http://api.trade.gov/trade_articles/search
+</code></pre>
+
+<h2>Request Methods</h2>
+
+<h3>keyword</h3>
+
+<p>Returns articles for a match in the content and body fields.</p>
+
+<pre><code>http://api.trade.gov/trade_articles/search?q=&lt;keyword&gt;
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?q=logistics
+</code></pre>
+
+<h3>evergreen</h3>
+
+<p>Flag to designate articles that are always relevant to particular topic.</p>
+
+<pre><code>http://api.trade.gov/trade_articles/search?evergreen={true or false}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?evergreen=true
+</code></pre>
+
+<h3>pub_date</h3>
+
+<h4>pub_date_start</h4>
+
+<p>Returns articles created on or after a specific date.</p>
+
+<pre><code>http://api.trade.gov/trade_articles/search?pub_date_start={YYYY-MM-DD}
+</code></pre>
+
+<h5>Example</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04
+</code></pre>
+
+<h4>pub_date_end</h4>
+
+<p>Returns articles created on or before a specified date.</p>
+
+<pre><code>http://api.trade.gov/trade_articles/search?pub_date_end={YYYY-MM-DD}
+</code></pre>
+
+<h5>Example</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07
+</code></pre>
+
+<h3>update_date</h3>
+
+<p>Returns articles created on a specified date.</p>
+
+<pre><code>http://api.trade.gov/trade_articles/search?update_date={YYYY-MM-DD}
+</code></pre>
+
+<h5>Example</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?update_date=2013-04-30
+</code></pre>
+
+<h3>size + offset</h3>
+
+<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_articles/search?q=logistics&amp;size=1&amp;offset=1
+</code></pre>
+
+<h2>Return Values</h2>
+
+<table>
+<thead>
+<tr>
+<th> Field             </th>
+<th> Description                                                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> id                </td>
+<td> Unique identifier for post                                      </td>
+</tr>
+<tr>
+<td> evergreen </td>
+<td> Flag to designate "timeless" articles, always topically relevant </td>
+</tr>
+<tr>
+<td> content   </td>
+<td> Body of the article </td>
+</tr>
+<tr>
+<td> publish_date </td>
+<td> Earliest date article can be published (default sort) </td>
+</tr>
+<tr>
+<td> title </td>
+<td> Title of the article </td>
+</tr>
+<tr>
+<td> update_date </td>
+<td> Date the article was last updated </td>
+</tr>
+<tr>
+<td> content_type </td>
+<td> Type of content embodied by the article </td>
+</tr>
+<tr>
+<td> export_phase </td>
+<td> Phase of exporting that a business should be in to benefit from the article </td>
+</tr>
+<tr>
+<td> industry </td>
+<td> Industry category assigned to this article </td>
+</tr>
+<tr>
+<td> topic </td>
+<td> Topic assigned to this article </td>
+</tr>
+<tr>
+<td> subtopic </td>
+<td> Subtopic assigned to this article </td>
+</tr>
+<tr>
+<td> trade_region </td>
+<td> Trade region covered by an article's content </td>
+</tr>
+<tr>
+<td> geo_region </td>
+<td> World region covered by an article's content </td>
+</tr>
+<tr>
+<td> geo_subregion </td>
+<td> Would sub-region covered by an article's content </td>
+</tr>
+<tr>
+<td> country </td>
+<td> Country covered by an article's content </td>
+</tr>
+<tr>
+<td> keyword </td>
+<td> Keywords assigned by the article's author </td>
+</tr>
+</tbody>
+</table>
+
+
+        </section>
+      <footer>
+        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+                    
+       <!-- <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+                    Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+                    the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+                    sites should not be construed as an endorsement of the views or privacy policies contained therein.</p>-->
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
