@@ -38,7 +38,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#2ba6cb;
   font-weight:400;
   text-decoration:none;
 }
@@ -143,6 +143,10 @@ header ul a {
   height:40px;
 }
 
+.view a {
+font-weight:bold;
+}
+
 strong {
   color:#222;
   font-weight:700;
@@ -187,6 +191,7 @@ footer {
   position:fixed;
   bottom:0px;
 }
+
 
 @media print, screen and (max-width: 960px) {
   
