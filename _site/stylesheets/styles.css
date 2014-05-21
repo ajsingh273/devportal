@@ -5,6 +5,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  background:#f1f1f1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +39,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#2ba6cb;
+  color:#494949;
   font-weight:400;
   text-decoration:none;
 }
@@ -70,11 +71,11 @@ blockquote {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
-  font-size:12px;
+  font-size:10px;
 }
 
 pre {
-  padding:8px 15px;
+  padding:4px 8px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
@@ -149,7 +150,7 @@ header ul a {
 }
 
 .view a {
-
+color:#494949;
 
 }
 
@@ -178,7 +179,14 @@ header ul a strong {
 section {
   width:500px;
   float:right;
-  padding-bottom:50px;
+  padding:30px 15px ;
+  background:#fff;
+  border: 1px solid;
+border-color: #e5e5e5 #dbdbdb #d2d2d2;
+-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
+border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -khtml-border-radius:3px;
 }
 
 small {
@@ -220,7 +228,7 @@ footer {
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
+    padding:30px 15px;
     margin:0 0 20px;
   }
   
