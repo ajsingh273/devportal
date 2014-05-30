@@ -1,11 +1,11 @@
 ---
 published: true
 permalink: "market-research-library.html"
-title: Market Research Library API
+title: Market Research Library
 layout: body
 ---
 
-#Market Research Library API
+#Market Research Library
 This API provides metadata for country and industry reports that are produced by ITA’s trade experts and are available in ITA’s online market research library.  Categorized by country and industry, these reports include:
 
 * Market Research Reports
@@ -40,7 +40,7 @@ Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org
 
 ###industry
 
-Returns market research reports for a specific [industry](/industry-list-market-research-library.html)
+Returns market research reports for a specific [industry](devportal/industry-list-market-research-library.html)
 
     http://api.trade.gov/market_research_library/search.json?industry=<industry name>
 
