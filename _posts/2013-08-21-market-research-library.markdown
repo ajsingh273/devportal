@@ -40,7 +40,7 @@ Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org
 
 ###industry
 
-Returns market research reports for a specific [industry](/industry-list-market-research-library.html)
+Returns market research reports for a specific [industry](devportal/industry-list-market-research-library.html)
 
     http://api.trade.gov/market_research_library/search.json?industry=<industry name>
 
