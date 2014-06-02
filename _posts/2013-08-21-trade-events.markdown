@@ -28,7 +28,7 @@ Searches for a match within the event_name and description fields.
 
 ###industry
 
-Searches for specific controlled [industry names](devportal/industry-list-trade-events.html)
+Searches for specific controlled [industry names](industry-list-trade-events.html)
 
     http://api.trade.gov/trade_events/search?industry={term}
 
@@ -61,7 +61,7 @@ The size parameter allows you to configure the maximum amount of hits to be retu
 | ------------------ | --------------------------------------- |
 | id                 | Unique identifier for post              |
 | event_name         | name given for the event                |
-| event_type         | [The type of the event (controlled value)](devportal/event-type-list.html)  |
+| event_type         | [The type of the event (controlled value)](event-type-list.html)  |
 | start_date         | start date of the event (default sort)  |
 | end_date           | end date of the event                   |
 | cost               | cost of the event                       |
