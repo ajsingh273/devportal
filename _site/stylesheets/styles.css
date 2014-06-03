@@ -3,7 +3,7 @@
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#535353;
   font-weight:300;
   background:#f1f1f1;
   
@@ -29,7 +29,7 @@ h1 {
 }
 
 h2 {
-  font-size:14px; font-style:italic;color:#777777;
+  font-size:16px; font-style:italic;color:#535353;
   border-bottom:1px solid #e5e5e5;
     border-width:1px 0;
     padding-bottom:20px;
@@ -53,7 +53,7 @@ text-decoration:underline;
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#535353;
   margin-top:-0.6em;
   display:block;
 }
