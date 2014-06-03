@@ -1,11 +1,11 @@
 ---
 permalink: faq.html
 layout: body
-title: FAQ
+title: FAQs
 published: true
 ---
 
-#FAQ
+#FAQs
 
 ##Getting Started
 
