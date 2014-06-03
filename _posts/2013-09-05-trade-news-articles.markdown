@@ -1,11 +1,11 @@
 ---
 permalink: "trade-news-articles.html"
 layout: body
-title: "Trade News & Articles"
+title: Trade News & Articles API
 published: true
 ---
 
-#Trade News & Articles
+#Trade News & Articles API
 
 The Trade News & Articles API provides in-depth news and articles written by Trade Specialists working in the Federal government.  The news and articles are categorized by industry, country, and topic area.  Developers can use this API to provide exporters with the latest insights into their industry and into the countries with which they would like to do business.
 
