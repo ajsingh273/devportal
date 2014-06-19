@@ -20,7 +20,7 @@
         <a href="/devportal" style="text-decoration:none;"><h1 style="font-size:24px;color: #0851ab;">Trade Developer Portal</h1>
         <h2>Enabling U.S. Exports Through Open Data</h2>--></a>
         <p></p>
-		<h3>Available APIs</h3>
+		<h3>API Endpoints</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
         <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
@@ -57,6 +57,8 @@
 <pre><code>http://api.trade.gov/market_research_library/search
 </code></pre>
 
+<p></br></p>
+
 <h2>Search Parameters</h2>
 
 <h3>keyword</h3>
@@ -71,6 +73,8 @@
 <pre><code>http://api.trade.gov/market_research_library/search?q=modernization
 </code></pre>
 
+<p></br></p>
+
 <h3>countries</h3>
 
 <p>Returns office locations based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.</p>
@@ -82,6 +86,8 @@
 
 <pre><code>http://api.trade.gov/market_research_library/search.json?countries=MX
 </code></pre>
+
+<p></br></p>
 
 <h3>industry</h3>
 
@@ -95,6 +101,8 @@
 <pre><code>http://api.trade.gov/market_research_library/search.json?industry=agribusiness
 </code></pre>
 
+<p></br></p>
+
 <h3>size + offset</h3>
 
 <p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
@@ -103,6 +111,8 @@
 
 <pre><code>http://api.trade.gov/market_research_library/search?country=BR&amp;size=1&amp;offset=1
 </code></pre>
+
+<p></br></p>
 
 <h2>Return Values</h2>
 
@@ -115,35 +125,35 @@
 </thead>
 <tbody>
 <tr>
-<td> id              </td>
+<td> <pre><code>id</code></pre>             </td>
 <td> Unique identifier assigned to the event                         </td>
 </tr>
 <tr>
-<td> countries       </td>
+<td> <pre><code>countries</code></pre>     </td>
 <td> Country category(ies) assigned to the report                    </td>
 </tr>
 <tr>
-<td> description     </td>
+<td> <pre><code>description</code></pre>     </td>
 <td> Abstract of the report’s content                                </td>
 </tr>
 <tr>
-<td> expiration_date </td>
+<td> <pre><code>expiration_date</code></pre> </td>
 <td> Date when the report is no longer valid                         </td>
 </tr>
 <tr>
-<td> industry        </td>
+<td> <pre><code>industry</code></pre>        </td>
 <td> Industry category assigned to the report                        </td>
 </tr>
 <tr>
-<td> report_type     </td>
+<td> <pre><code>report_type</code></pre>     </td>
 <td> The report type can either be CCG, Best Market Report, or Market Research Report</td>
 </tr>
 <tr>
-<td> title           </td>
+<td> <pre><code>title</code></pre>           </td>
 <td> Report title  (default sort)                                    </td>
 </tr>
 <tr>
-<td> url             </td>
+<td> <pre><code>url</code></pre>             </td>
 <td> URL for the report                                              </td>
 </tr>
 </tbody>
@@ -153,8 +163,8 @@
         </section>
         <section id="foot">
        
-        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
-                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+        <center><p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
                     
        <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
                     Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening

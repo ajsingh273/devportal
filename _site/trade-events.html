@@ -20,7 +20,7 @@
         <a href="/devportal" style="text-decoration:none;"><h1 style="font-size:24px;color: #0851ab;">Trade Developer Portal</h1>
         <h2>Enabling U.S. Exports Through Open Data</h2>--></a>
         <p></p>
-		<h3>Available APIs</h3>
+		<h3>API Endpoints</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
         <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
@@ -52,6 +52,8 @@
 <pre><code>http://api.trade.gov/trade_events/search
 </code></pre>
 
+<p></br></p>
+
 <h2>Search Parameters</h2>
 
 <h3>keyword</h3>
@@ -66,6 +68,8 @@
 <pre><code>http://api.trade.gov/trade_events/search?q=computer
 </code></pre>
 
+<p></br></p>
+
 <h3>industry</h3>
 
 <p>Searches for specific controlled <a href="industry-list-trade-events.html">industry names</a></p>
@@ -77,6 +81,8 @@
 
 <pre><code>http://api.trade.gov/trade_events/search?industry=Agribusiness
 </code></pre>
+
+<p></br></p>
 
 <h3>countries</h3>
 
@@ -90,6 +96,8 @@
 <pre><code>http://api.trade.gov/trade_events/search?countries=MX
 </code></pre>
 
+<p></br></p>
+
 <h3>size + offset</h3>
 
 <p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
@@ -98,6 +106,8 @@
 
 <pre><code>http://api.trade.gov/trade_events/search?country=BR&amp;size=1&amp;offset=1
 </code></pre>
+
+<p></br></p>
 
 <h2>Return Values</h2>
 
@@ -110,87 +120,87 @@
 </thead>
 <tbody>
 <tr>
-<td> id                 </td>
+<td> <pre><code>id</code></pre>                 </td>
 <td> Unique identifier for post              </td>
 </tr>
 <tr>
-<td> event_name         </td>
+<td> <pre><code>event_name</code></pre>         </td>
 <td> name given for the event                </td>
 </tr>
 <tr>
-<td> event_type         </td>
+<td> <pre><code>event_type</code></pre>         </td>
 <td> <a href="event-type-list.html">The type of the event (controlled value)</a>  </td>
 </tr>
 <tr>
-<td> start_date         </td>
+<td> <pre><code>start_date</code></pre>         </td>
 <td> start date of the event (default sort)  </td>
 </tr>
 <tr>
-<td> end_date           </td>
+<td> <pre><code>end_date</code></pre>           </td>
 <td> end date of the event                   </td>
 </tr>
 <tr>
-<td> cost               </td>
+<td> <pre><code>cost</code></pre>               </td>
 <td> cost of the event                       </td>
 </tr>
 <tr>
-<td> registration_link  </td>
+<td> <pre><code>registration_link</code></pre>  </td>
 <td> URL for registration page               </td>
 </tr>
 <tr>
-<td> registration_title </td>
+<td> <pre><code>registration_title</code></pre> </td>
 <td> title of the registration URL           </td>
 </tr>
 <tr>
-<td> description        </td>
+<td> <pre><code>description</code></pre>        </td>
 <td> text describing the event               </td>
 </tr>
 <tr>
-<td> industry           </td>
+<td> <pre><code>industry</code></pre>           </td>
 <td> industry category assigned to the event </td>
 </tr>
 <tr>
-<td> url                </td>
+<td> <pre><code>url</code></pre>                </td>
 <td> URL for the event                       </td>
 </tr>
 <tr>
-<td> venue              </td>
+<td> <pre><code>venue</code></pre>              </td>
 <td> place where event is held               </td>
 </tr>
 <tr>
-<td> city               </td>
+<td> <pre><code>city</code></pre>               </td>
 <td> city where event is held                </td>
 </tr>
 <tr>
-<td> state              </td>
+<td> <pre><code>state</code></pre>              </td>
 <td> state where event is held               </td>
 </tr>
 <tr>
-<td> country            </td>
+<td> <pre><code>country</code></pre>            </td>
 <td> country where event is held             </td>
 </tr>
 <tr>
-<td> first_name         </td>
+<td> <pre><code>first_name</code></pre>         </td>
 <td> first name of the contact               </td>
 </tr>
 <tr>
-<td> last_name          </td>
+<td> <pre><code>last_name</code></pre>          </td>
 <td> last name of the contact                </td>
 </tr>
 <tr>
-<td> post               </td>
+<td> <pre><code>post</code></pre>               </td>
 <td> contact's organization                  </td>
 </tr>
 <tr>
-<td> person_title       </td>
+<td> <pre><code>person_title</code></pre>       </td>
 <td> contact's job title                     </td>
 </tr>
 <tr>
-<td> phone              </td>
+<td> <pre><code>phone</code></pre>              </td>
 <td> contact's phone number                  </td>
 </tr>
 <tr>
-<td> email              </td>
+<td> <pre><code>email</code></pre>              </td>
 <td> contact's email address                 </td>
 </tr>
 </tbody>
@@ -200,8 +210,8 @@
         </section>
         <section id="foot">
        
-        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
-                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+        <center><p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
                     
        <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
                     Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening

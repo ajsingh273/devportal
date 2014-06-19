@@ -20,7 +20,7 @@
         <a href="/devportal" style="text-decoration:none;"><h1 style="font-size:24px;color: #0851ab;">Trade Developer Portal</h1>
         <h2>Enabling U.S. Exports Through Open Data</h2>--></a>
         <p></p>
-		<h3>Available APIs</h3>
+		<h3>API Endpoints</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
         <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
@@ -50,6 +50,8 @@
 <pre><code>http://api.trade.gov/ita_office_locations/search
 </code></pre>
 
+<p></br></p>
+
 <h2>Search Parameters</h2>
 
 <h3>keyword</h3>
@@ -64,12 +66,16 @@
 <pre><code>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo
 </code></pre>
 
+<p></br></p>
+
 <h3>city</h3>
 
 <p>Returns office locations based on city name</p>
 
 <pre><code>http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo
 </code></pre>
+
+<p></br></p>
 
 <h3>country</h3>
 
@@ -82,6 +88,8 @@
 
 <pre><code>http://api.trade.gov/ita_office_locations/search?country=BR
 </code></pre>
+
+<p></br></p>
 
 <h3>state</h3>
 
@@ -96,6 +104,8 @@
 <pre><code>http://api.trade.gov/ita_office_locations/search?state=TN
 </code></pre>
 
+<p></br></p>
+
 <h3>size + offset</h3>
 
 <p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
@@ -104,6 +114,8 @@
 
 <pre><code>http://api.trade.gov/ita_office_locations/search?country=BR&amp;size=1&amp;offset=1
 </code></pre>
+
+<p></br></p>
 
 <h2>Data Elements</h2>
 
@@ -116,47 +128,47 @@
 </thead>
 <tbody>
 <tr>
-<td> id                </td>
+<td> <pre><code>id</code></pre>                </td>
 <td> Unique identifier for post                                      </td>
 </tr>
 <tr>
-<td> post              </td>
+<td> <pre><code>post</code></pre>              </td>
 <td> Name of the post (Default sort)                                 </td>
 </tr>
 <tr>
-<td> office_name       </td>
+<td> <pre><code>office_name</code></pre>       </td>
 <td> Office Name                                                     </td>
 </tr>
 <tr>
-<td> state             </td>
+<td> <pre><code>state</code></pre>             </td>
 <td> State abbreviation, for domestic offices                        </td>
 </tr>
 <tr>
-<td> city              </td>
+<td> <pre><code>city</code></pre>              </td>
 <td> City                                                            </td>
 </tr>
 <tr>
-<td> address           </td>
+<td> <pre><code>address</code></pre>           </td>
 <td> Street address of office                                        </td>
 </tr>
 <tr>
-<td> email             </td>
+<td> <pre><code>email</code></pre>             </td>
 <td> Office email address                                            </td>
 </tr>
 <tr>
-<td> fax               </td>
+<td> <pre><code>fax</code></pre>               </td>
 <td> Fax number                                                      </td>
 </tr>
 <tr>
-<td> mail_instructions </td>
+<td> <pre><code>mail_instructions</code></pre> </td>
 <td> Snail mail instructions                                         </td>
 </tr>
 <tr>
-<td> phone             </td>
+<td> <pre><code>phone</code></pre>             </td>
 <td> Office phone number                                             </td>
 </tr>
 <tr>
-<td> post_type         </td>
+<td> <pre><code>post_type</code></pre>         </td>
 <td> Type of post (domestic or international)                        </td>
 </tr>
 </tbody>
@@ -166,8 +178,8 @@
         </section>
         <section id="foot">
        
-        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
-                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+        <center><p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
                     
        <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
                     Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
