@@ -20,7 +20,7 @@
         <a href="/devportal" style="text-decoration:none;"><h1 style="font-size:24px;color: #0851ab;">Trade Developer Portal</h1>
         <h2>Enabling U.S. Exports Through Open Data</h2>--></a>
         <p></p>
-		<h3>Available APIs</h3>
+		<h3>API Endpoints</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
         <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
@@ -50,6 +50,8 @@
 <pre><code>http://api.trade.gov/trade_articles/search
 </code></pre>
 
+<p></br></p>
+
 <h2>Request Methods</h2>
 
 <h3>keyword</h3>
@@ -64,6 +66,8 @@
 <pre><code>http://api.trade.gov/trade_articles/search?q=logistics
 </code></pre>
 
+<p></br></p>
+
 <h3>evergreen</h3>
 
 <p>Flag to designate articles that are always relevant to particular topic.</p>
@@ -75,6 +79,8 @@
 
 <pre><code>http://api.trade.gov/trade_articles/search?evergreen=true
 </code></pre>
+
+<p></br></p>
 
 <h3>pub_date</h3>
 
@@ -90,6 +96,8 @@
 <pre><code>http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04
 </code></pre>
 
+<p></br></p>
+
 <h4>pub_date_end</h4>
 
 <p>Returns articles created on or before a specified date.</p>
@@ -101,6 +109,8 @@
 
 <pre><code>http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07
 </code></pre>
+
+<p></br></p>
 
 <h3>update_date</h3>
 
@@ -114,6 +124,8 @@
 <pre><code>http://api.trade.gov/trade_articles/search?update_date=2013-04-30
 </code></pre>
 
+<p></br></p>
+
 <h3>size + offset</h3>
 
 <p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
@@ -122,6 +134,8 @@
 
 <pre><code>http://api.trade.gov/trade_articles/search?q=logistics&amp;size=1&amp;offset=1
 </code></pre>
+
+<p></br></p>
 
 <h2>Return Values</h2>
 
@@ -134,67 +148,67 @@
 </thead>
 <tbody>
 <tr>
-<td> id                </td>
+<td> <pre><code>id</code></pre>                </td>
 <td> Unique identifier for post                                      </td>
 </tr>
 <tr>
-<td> evergreen </td>
+<td> <pre><code>evergreen</code></pre> </td>
 <td> Flag to designate "timeless" articles, always topically relevant </td>
 </tr>
 <tr>
-<td> content   </td>
+<td> <pre><code>content</code></pre>   </td>
 <td> Body of the article </td>
 </tr>
 <tr>
-<td> pub_date </td>
+<td> <pre><code>pub_date</code></pre> </td>
 <td> Earliest date article can be published (default sort) </td>
 </tr>
 <tr>
-<td> title </td>
+<td> <pre><code>title</code></pre> </td>
 <td> Title of the article </td>
 </tr>
 <tr>
-<td> update_date </td>
+<td> <pre><code>update_date</code></pre> </td>
 <td> Date the article was last updated </td>
 </tr>
 <tr>
-<td> content_type </td>
+<td> <pre><code>content_type</code></pre> </td>
 <td> Type of content embodied by the article </td>
 </tr>
 <tr>
-<td> export_phase </td>
+<td> <pre><code>export_phase</code></pre> </td>
 <td> Phase of exporting that a business should be in to benefit from the article </td>
 </tr>
 <tr>
-<td> industry </td>
+<td> <pre><code>industry</code></pre> </td>
 <td> Industry category assigned to this article </td>
 </tr>
 <tr>
-<td> topic </td>
+<td> <pre><code>topic</code></pre> </td>
 <td> Topic assigned to this article </td>
 </tr>
 <tr>
-<td> subtopic </td>
+<td> <pre><code>subtopic</code></pre> </td>
 <td> Subtopic assigned to this article </td>
 </tr>
 <tr>
-<td> trade_region </td>
+<td> <pre><code>trade_region</code></pre> </td>
 <td> Trade region covered by an article's content </td>
 </tr>
 <tr>
-<td> geo_region </td>
+<td> <pre><code>geo_region</code></pre> </td>
 <td> World region covered by an article's content </td>
 </tr>
 <tr>
-<td> geo_subregion </td>
+<td> <pre><code>geo_subregion</code></pre> </td>
 <td> Would sub-region covered by an article's content </td>
 </tr>
 <tr>
-<td> country </td>
+<td> <pre><code>country</code></pre> </td>
 <td> Country covered by an article's content </td>
 </tr>
 <tr>
-<td> keyword </td>
+<td> <pre><code>keyword</code></pre> </td>
 <td> Keywords assigned by the article's author </td>
 </tr>
 </tbody>
@@ -204,8 +218,8 @@
         </section>
         <section id="foot">
        
-        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
-                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+        <center><p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
                     
        <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
                     Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening

@@ -12,7 +12,7 @@ This API provides contact and address information for all of ITA’s domestic an
 ##Resource URL
 
     http://api.trade.gov/ita_office_locations/search
-
+</br>
 ##Search Parameters
 
 ###keyword
@@ -24,13 +24,13 @@ Returns office locations for a match within the post or office name fields.
 #####Example:
 
     http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo
-
+</br>
 ###city
 
 Returns office locations based on city name
 
     http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo
-
+</br>
 ###country
 
 Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).
@@ -40,7 +40,7 @@ Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org
 #####Example:
 
     http://api.trade.gov/ita_office_locations/search?country=BR
-
+</br>
 ###state
 
 Returns locations for export assistance centers located in a specific  [U.S. State or Dependent Area](https://www.usps.com/send/official-abbreviations.htm).
@@ -51,7 +51,7 @@ Returns locations for export assistance centers located in a specific  [U.S. Sta
 #####Example:
 
     http://api.trade.gov/ita_office_locations/search?state=TN
-
+</br>
 ###size + offset
 
 The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.
@@ -60,19 +60,19 @@ The size parameter allows you to configure the maximum amount of hits to be retu
 
     http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1
 
-
+</br>
 ##Data Elements
 
 | Field             | Description                                                     |
 | ----------------- | --------------------------------------------------------------- |
-| id                | Unique identifier for post                                      |
-| post              | Name of the post (Default sort)                                 |
-| office_name       | Office Name                                                     |
-| state             | State abbreviation, for domestic offices                        |
-| city              | City                                                            |
-| address           | Street address of office                                        |
-| email             | Office email address                                            |
-| fax               | Fax number                                                      |
-| mail_instructions | Snail mail instructions                                         |
-| phone             | Office phone number                                             |
-| post_type         | Type of post (domestic or international)                        |
+| <pre><code>id</code></pre>                | Unique identifier for post                                      |
+| <pre><code>post</code></pre>              | Name of the post (Default sort)                                 |
+| <pre><code>office_name</code></pre>       | Office Name                                                     |
+| <pre><code>state</code></pre>             | State abbreviation, for domestic offices                        |
+| <pre><code>city</code></pre>              | City                                                            |
+| <pre><code>address</code></pre>           | Street address of office                                        |
+| <pre><code>email</code></pre>             | Office email address                                            |
+| <pre><code>fax</code></pre>               | Fax number                                                      |
+| <pre><code>mail_instructions</code></pre> | Snail mail instructions                                         |
+| <pre><code>phone</code></pre>             | Office phone number                                             |
+| <pre><code>post_type</code></pre>         | Type of post (domestic or international)                        |
