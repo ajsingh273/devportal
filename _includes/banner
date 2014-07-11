@@ -1,0 +1,86 @@
+
+<!DOCTYPE html><html class=''>
+<head><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/xaddict/pen/pmrjF" />
+
+<link rel='stylesheet' href='http://s.codepen.io/assets/reset/reset.css'><script src='http://s.codepen.io/assets/libs/modernizr.js'></script>
+<style>* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.fullscreen {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.centered {
+  font-size: 32px;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.white {
+  color: white;
+}
+span {
+  width: 6ch;
+  display: inline-block;
+}
+h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+}
+[data-rotate] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1ad6fd), to(#1d62f0));
+  background: -webkit-linear-gradient(#1ad6fd, #1d62f0);
+  background: linear-gradient(#1ad6fd, #1d62f0);
+}
+</style></head><body>
+<div class="fullscreen white" data-rotate>
+  <div class="centered">
+  <h1>Trade Developer Portal</h1>
+   
+  </div>
+</div>
+<script style='display: none;'>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('target') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
+<script>$("[data-rotate]").each(function(){
+  var el = $(this);
+  var rot = 0;
+  var bg = $(this).css('background-image');
+  //console.debug(bg);
+  if(bg.indexOf("linear-gradient") != -1){
+    var args = bg.replace("linear-gradient(","");
+    args = args.slice(0, - 1);
+    if(args.indexOf("to") != -1 || args.indexOf("deg") != -1){
+      args = args.split(",");
+      args.shift();
+      args = args.join(",");
+    }
+    setInterval(function(){
+      el.css("background-image","linear-gradient("+ rot +"deg, "+ args +")");
+      rot++;
+    },15);
+  } else {
+    // no linear-gradient
+  }
+});//@ sourceURL=pen.js
+</script>
+<script src='http://s.codepen.io/assets/common/localstorage.js'></script><script src='http://s.codepen.io/assets/post/scroll/remember_scroll.js'></script><script>RememberScroll.init();</script>
+</body></html>
