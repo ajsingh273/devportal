@@ -42,139 +42,37 @@
         </ul>-->
       </header>
       <section>
-        <h1><a href="ita-office-locations.html">ITA Offices &amp; Centers API</a></h1>
+        <h1>App Gallery</h1>
 
-<p>This API provides contact and address information for all of ITA’s domestic and international export assistance centers. Incorporating these listings into directories of business counseling services is one example of how developers can use this API to assist exporters.</p>
+<script src="http://ajsingh273.github.io/widgets/javascripts/articles-script.js" type="text/javascript"></script>
 
-<h2>Resource URL</h2>
 
-<pre><code>http://api.trade.gov/ita_office_locations/search
+<div id="articles-container"></div>
+
+
+<pre><code>&lt;script src="http://internationaltradeadministration.github.io/widgets/javascripts/articles-script.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;div id="articles-container"&gt;&lt;/div&gt;
 </code></pre>
 
-<p></br></p>
+<script src="http://ajsingh273.github.io/widgets/javascripts/reports-script.js" type="text/javascript"></script>
 
-<h2>Search Parameters</h2>
 
-<h3>keyword</h3>
+<div id="reports-container"></div>
 
-<p>Returns office locations for a match within the post or office name fields.</p>
 
-<pre><code>http://api.trade.gov/ita_office_locations/search?q={keyword}
+<pre><code>&lt;script src="http://internationaltradeadministration.github.io/widgets/javascripts/reports-script.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;div id="reports-container"&gt;&lt;/div&gt;
 </code></pre>
 
-<h5>Example:</h5>
+<script src="http://ajsingh273.github.io/widgets/javascripts/events-script.js" type="text/javascript"></script>
 
-<pre><code>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo
+
+<div id="events-container"></div>
+
+
+<pre><code>&lt;script src="http://internationaltradeadministration.github.io/widgets/javascripts/events-script.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;div id="events-container"&gt;&lt;/div&gt;
 </code></pre>
-
-<p></br></p>
-
-<h3>city</h3>
-
-<p>Returns office locations based on city name</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo
-</code></pre>
-
-<p></br></p>
-
-<h3>country</h3>
-
-<p>Returns office locations based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country={country name}
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country=BR
-</code></pre>
-
-<p></br></p>
-
-<h3>state</h3>
-
-<p>Returns locations for export assistance centers located in a specific  <a href="https://www.usps.com/send/official-abbreviations.htm">U.S. State or Dependent Area</a>.</p>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?state
-={state postal code abbreviation&gt;}
-</code></pre>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?state=TN
-</code></pre>
-
-<p></br></p>
-
-<h3>size + offset</h3>
-
-<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
-
-<h5>Example:</h5>
-
-<pre><code>http://api.trade.gov/ita_office_locations/search?country=BR&amp;size=1&amp;offset=1
-</code></pre>
-
-<p></br></p>
-
-<h2>Data Elements</h2>
-
-<table>
-<thead>
-<tr>
-<th> Field             </th>
-<th> Description                                                     </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> <pre><code>id</code></pre>                </td>
-<td> Unique identifier for post                                      </td>
-</tr>
-<tr>
-<td> <pre><code>post</code></pre>              </td>
-<td> Name of the post (Default sort)                                 </td>
-</tr>
-<tr>
-<td> <pre><code>office_name</code></pre>       </td>
-<td> Office Name                                                     </td>
-</tr>
-<tr>
-<td> <pre><code>state</code></pre>             </td>
-<td> State abbreviation, for domestic offices                        </td>
-</tr>
-<tr>
-<td> <pre><code>city</code></pre>              </td>
-<td> City                                                            </td>
-</tr>
-<tr>
-<td> <pre><code>address</code></pre>           </td>
-<td> Street address of office                                        </td>
-</tr>
-<tr>
-<td> <pre><code>email</code></pre>             </td>
-<td> Office email address                                            </td>
-</tr>
-<tr>
-<td> <pre><code>fax</code></pre>               </td>
-<td> Fax number                                                      </td>
-</tr>
-<tr>
-<td> <pre><code>mail_instructions</code></pre> </td>
-<td> Snail mail instructions                                         </td>
-</tr>
-<tr>
-<td> <pre><code>phone</code></pre>             </td>
-<td> Office phone number                                             </td>
-</tr>
-<tr>
-<td> <pre><code>post_type</code></pre>         </td>
-<td> Type of post (domestic or international)                        </td>
-</tr>
-</tbody>
-</table>
-
 
         </section>
         <section id="foot">
