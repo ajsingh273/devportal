@@ -17,7 +17,7 @@ published: true
 <div id="reports-container"></div>
 
 	<script src="http://ajsingh273.github.io/widgets/javascripts/reports-script.js" type="text/javascript"></script>
-	<div id="reports-container">
+	<div id="reports-container"></div>
 	
 <script src="http://ajsingh273.github.io/widgets/javascripts/events-script.js" type="text/javascript"></script>
 <div id="events-container"></div>
