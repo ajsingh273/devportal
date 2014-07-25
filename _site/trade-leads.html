@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Trade Developer Portal</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+       <a href="/devportal" style="text-decoration:none;"><img   src="images/trade_url_white2.png"  > <!--<h1 style="font-size:24px;
+  color: #0851ab; "> Developer</h1>
+        <a href="/devportal" style="text-decoration:none;"><h1 style="font-size:24px;color: #0851ab;">Trade Developer Portal</h1>
+        <h2>Enabling U.S. Exports Through Open Data</h2>--></a>
+        <p></p>
+		<h3>Available APIs</h3>
+        <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
+        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
+        <p class="view"><a href="trade-events.html">Trade Events</a></p>
+        <p class="view"><a href="trade-leads.html">Trade Leads</a></p>
+        <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
+		
+		<h3>Additional Resources</h3>
+		<p class="view"><a href="about-apis.html">About Our APIs</a></p>
+        <p class="view"><a href="whats-possible.html">What's Possible</a></p>
+        <p class="view"><a href="apps-exporters.html">Apps for Exporters</a></p>
+        <p class="view"><a href="faq.html">FAQs</a></p>
+        <p class="view"><a href="change-log.html">Change Log</a></p>
+        <p class="view"><a href="tos.html">Terms of Service</a></p>
+
+        <!--<ul>
+          <li><a href="https://github.com/ajsingh273/devportal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ajsingh273/devportal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ajsingh273/devportal">View On <strong>GitHub</strong></a></li>
+        </ul>-->
+      </header>
+      <section>
+        <h1>Trade Leads API</h1>
+
+<p>The Trade Leads API provides contract opportunities for U.S. businesses selling their products and services overseas. These leads come from a variety of sources and we continue to expand the number of leads available.</p>
+
+<p>We currently provide trade leads, procurement opportunities, and contract notifications from the UK and from Canada.  We will soon be including leads from the State Department’s Business Information Database System (BIDS) and from FedBizOpps.  All leads are consolidated into one endpoint.</p>
+
+<p>Developers can use this API to keep businesses aware of the latest leads in particular industries or locations.  They can also enhance the value of the leads by incorporating reports from ITA’s <a href="http://developer.trade.gov/market-research-library.html">Market Research Library</a> or <a href="http://developer.trade.gov/trade-news-articles.html">Trade News &amp; Articles</a> APIs.</p>
+
+<p>The output format for this API is JSON.</p>
+
+<h2>Current Sources</h2>
+
+<h3>Canadian leads</h3>
+
+<p>The <a href="https://buyandsell.gc.ca/procurement-data/">Canadian Government</a> provides procurement information for their government opportunities.  Leads provided by the Canadian government have the following data model:</p>
+
+<p><strong>Return Values from Canada</strong></p>
+
+<table>
+<thead>
+<tr>
+<th> Field             </th>
+<th> Description                                                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> title                </td>
+<td> Title of the opportunity </td>
+</tr>
+<tr>
+<td> reference_number         </td>
+<td> Reference number for the opportunity </td>
+</tr>
+<tr>
+<td> contract_number </td>
+<td> Contract Number for the opportunity </td>
+</tr>
+<tr>
+<td> publish_date </td>
+<td> Date lead was posted </td>
+</tr>
+<tr>
+<td> end_date</td>
+<td> Closing date for the lead </td>
+</tr>
+<tr>
+<td> publish_date_amended </td>
+<td> Date of latest change to the original lead </td>
+</tr>
+<tr>
+<td> status </td>
+<td> Status of the lead (note this API only shows open leads) </td>
+</tr>
+<tr>
+<td> description </td>
+<td> Description of the opporunity </td>
+</tr>
+<tr>
+<td> industry </td>
+<td> Industry category assigned to the opportunity </td>
+</tr>
+<tr>
+<td> specific_location </td>
+<td> The locations of the work in the contract </td>
+</tr>
+<tr>
+<td> notice_type </td>
+<td> Type of contract </td>
+</tr>
+<tr>
+<td> trade_agreement </td>
+<td> Relevant trade agreement for the contract </td>
+</tr>
+<tr>
+<td> bid_type </td>
+<td> The criteria for the contract </td>
+</tr>
+<tr>
+<td> competitive_procurement_strategy </td>
+<td> Bidding criteria for respondents </td>
+</tr>
+<tr>
+<td> non_competitive_procurement_strategy </td>
+<td> States whether it is a competitive procurement </td>
+</tr>
+<tr>
+<td> procurement_organization </td>
+<td> Agency responsible for the contract </td>
+</tr>
+<tr>
+<td> implementing_entity </td>
+<td> Agency responsible for the implementation </td>
+</tr>
+<tr>
+<td> contact </td>
+<td> Point of contact </td>
+</tr>
+<tr>
+<td> urls </td>
+<td> URLs that pertain to the bid</td>
+</tr>
+<tr>
+<td> country </td>
+<td> CA </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>Licence - Canada</strong></p>
+
+<p>Canadian leads are subject to Canadian's license located at:</p>
+
+<p><a href="http://data.gc.ca/eng/open-government-licence-canada">http://data.gc.ca/eng/open-government-licence-canada</a></p>
+
+<h3>UK Government leads</h3>
+
+<p>The <a href="https://www.contractsfinder.businesslink.gov.uk/">UK Government</a> provides procurement information for their government opportunities. Leads provided by the UK government have the following data model:</p>
+
+<p><strong>Return Values from the UK</strong></p>
+
+<table>
+<thead>
+<tr>
+<th> Field             </th>
+<th> Description                                                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> id                </td>
+<td> ID of the trade lead </td>
+</tr>
+<tr>
+<td> reference_number         </td>
+<td> Reference number for the opportunity </td>
+</tr>
+<tr>
+<td> publish_date </td>
+<td> Date lead was posted </td>
+</tr>
+<tr>
+<td> min_contract_value </td>
+<td> Minimum value of the lead (in pounds) </td>
+</tr>
+<tr>
+<td> max_contract_value </td>
+<td> Maximum value of the lead (in pounds) </td>
+</tr>
+<tr>
+<td> status </td>
+<td> Status of the lead (note this API only shows open leads) </td>
+</tr>
+<tr>
+<td> url </td>
+<td> URL that pertain to the bid</td>
+</tr>
+<tr>
+<td> procurement_organization </td>
+<td> Agency responsible for the contract </td>
+</tr>
+<tr>
+<td> contact </td>
+<td> Point of contact </td>
+</tr>
+<tr>
+<td> title                </td>
+<td> Title of the opportunity </td>
+</tr>
+<tr>
+<td> description </td>
+<td> Description of the opporunity </td>
+</tr>
+<tr>
+<td> notice_type </td>
+<td> Type of contract </td>
+</tr>
+<tr>
+<td> industry </td>
+<td> Industry category assigned to the opportunity </td>
+</tr>
+<tr>
+<td> specific_location </td>
+<td> Location of the opportunity </td>
+</tr>
+<tr>
+<td> country </td>
+<td> GB </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>Licence - UK</strong></p>
+
+<p>UK leads are subject to their open government license located at:</p>
+
+<p><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">http://www.nationalarchives.gov.uk/doc/open-government-licence/</a></p>
+
+<h2>Resource URL</h2>
+
+<pre><code>http://api.trade.gov/trade_leads/search
+</code></pre>
+
+<h2>Search Parameters</h2>
+
+<h3>keyword</h3>
+
+<p>Searches for a match within the title and description fields.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?q={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?q=electrical
+</code></pre>
+
+<h3>industries</h3>
+
+<p>Returns industry that the lead relates to.  Note:  This method allows you to search for multiple industries (plural) but will only return one industry (singular) per lead.  Also, this method will soon be updated to limit the search to controlled industry names.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?industries={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?industries=agribusiness
+</code></pre>
+
+<h3>countries</h3>
+
+<p>Returns location of lead based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.  Note:  This method allows you to search for multiple countries (plural) but will only return one country (singular) per lead.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?countries={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?countries=MX,CA,GB
+</code></pre>
+
+<h3>size + offset</h3>
+
+<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?country=BR&amp;size=1&amp;offset=1
+</code></pre>
+
+<h3>State Departmenet leads</h3>
+
+<p>The <a href="http://bids.state.gov/">State Department's</a> Business Information Database System (BIDS) is a portal built to help U.S. businesses learn about significant international commercial opportunities.:</p>
+
+<p><strong>Return Values from BIDS</strong></p>
+
+<table>
+<thead>
+<tr>
+<th> Field             </th>
+<th> Description                                                     </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> type                </td>
+<td> Trade lead source </td>
+</tr>
+<tr>
+<td> id                </td>
+<td> ID of the trade lead </td>
+</tr>
+<tr>
+<td> source            </td>
+<td> Source of the trade lead, typically an organization </td>
+</tr>
+<tr>
+<td> specific_location </td>
+<td> Location of the opportunity </td>
+</tr>
+<tr>
+<td> project_number </td>
+<td> Number for the opportunity </td>
+</tr>
+<tr>
+<td> industry </td>
+<td> Industry category assigned to the opportunity </td>
+</tr>
+<tr>
+<td> project_size </td>
+<td> Industry category assigned to the opportunity </td>
+</tr>
+<tr>
+<td> description </td>
+<td> Description of the opporunity </td>
+</tr>
+<tr>
+<td> tags </td>
+<td> Keywords of the opportunity </td>
+</tr>
+<tr>
+<td> publish_date </td>
+<td> Date lead was posted </td>
+</tr>
+<tr>
+<td> end_date </td>
+<td> Closing date for the lead </td>
+</tr>
+<tr>
+<td> funding_source </td>
+<td> Funding source of the project </td>
+</tr>
+<tr>
+<td> borrowing_entity </td>
+<td> Bank funding the project </td>
+</tr>
+<tr>
+<td> procurement_organization </td>
+<td> Agency responsible for the contract </td>
+</tr>
+<tr>
+<td> project_pocs </td>
+<td> Point of contact </td>
+</tr>
+<tr>
+<td> comments </td>
+<td> comments about the project </td>
+</tr>
+<tr>
+<td> submitting_officer </td>
+<td> Contract officer name </td>
+</tr>
+<tr>
+<td> submitting_officer_contact </td>
+<td> Contract officer email </td>
+</tr>
+<tr>
+<td> url </td>
+<td> URL that pertain to the bid</td>
+</tr>
+<tr>
+<td> status </td>
+<td> Status of the lead (note this API only shows open leads) </td>
+</tr>
+</tbody>
+</table>
+
+
+<p><strong>Licence - State</strong></p>
+
+<p>State Department leads are subject to their open government license located at:</p>
+
+<p><a href="https://github.com/USStateDept/bids">https://github.com/USStateDept/bids</a></p>
+
+<h2>Resource URL</h2>
+
+<pre><code>http://api.trade.gov/trade_leads/search
+</code></pre>
+
+<h2>Search Parameters</h2>
+
+<h3>keyword</h3>
+
+<p>Searches for a match within the title and description fields.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?q={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?q=electrical
+</code></pre>
+
+<h3>industries</h3>
+
+<p>Returns industry that the lead relates to.  Note:  This method allows you to search for multiple industries (plural) but will only return one industry (singular) per lead.  Also, this method will soon be updated to limit the search to controlled industry names.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?industries={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?industries=agribusiness
+</code></pre>
+
+<h3>countries</h3>
+
+<p>Returns location of lead based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.  Note:  This method allows you to search for multiple countries (plural) but will only return one country (singular) per lead.</p>
+
+<pre><code>http://api.trade.gov/trade_leads/search?countries={term}
+</code></pre>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?countries=BR,MX
+</code></pre>
+
+<h3>size + offset</h3>
+
+<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
+
+<h5>Example:</h5>
+
+<pre><code>http://api.trade.gov/trade_leads/search?country=BR&amp;size=1&amp;offset=1
+</code></pre>
+
+        </section>
+        <section id="foot">
+       
+         <center><p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p></center>
+                    
+       <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+                    Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+                    the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+                    sites should not be construed as an endorsement of the views or privacy policies contained therein.</p>
+     
+        </section>
+      <!--<footer>
+        <p><small><a href="http://trade.gov/feedback.asp">Website Feedback</a> | <a href="http://www.usa.gov">USA.gov</a> | <a href="http://trade.gov/foia">FOIA</a>  | <a href="http://trade.gov/privacy.asp">Privacy Policy</a>  | <a href="http://trade.gov/endorse.asp">Disclaimer</a>  |
+                    <a href="http://trade.gov/ITAiqs.pdf">Information Quality Guidelines</a></small></p>
+                    
+       <p style="font-size:10px;">The <a href="http://www.trade.gov">International Trade Administration</a>, <a href="http://www.commerce.gov">U.S.
+                    Department of Commerce</a>, manages this global trade site to provide access to ITA information on promoting trade and investment, strengthening
+                    the competitiveness of U.S. industry, and ensuring fair trade and compliance with trade laws and agreements. External links to other Internet
+                    sites should not be construed as an endorsement of the views or privacy policies contained therein.</p>
+      </footer>-->
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+  
+</html>
