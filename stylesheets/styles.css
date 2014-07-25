@@ -315,6 +315,14 @@ progress, progress[role] {
   background: #000;
 }
 
+.skill-4::-webkit-progress-value {
+  background: #16a085;
+}
+
+.skill-4::-moz-progress-bar {
+  background: #000;
+}
+
 
 
 
