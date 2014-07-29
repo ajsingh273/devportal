@@ -43,7 +43,7 @@ We are particularly interested in applications that help businesses:
 <script src="http://ajsingh273.github.io/widgets/javascripts/mrr-script.js" type="text/javascript"></script>
 <div id="mrr-container"></div>
 
-	<script src="http://ajsingh273.github.io/widgets/javascripts/mrr-script.js" type="text/javascript"></script>
+	<script src="http://internationaltradeadministration.github.io/widgets/javascripts/mrr-script.js" type="text/javascript"></script>
 	<div id="mrr-container"></div>
 	
 </br>
@@ -60,5 +60,5 @@ We are particularly interested in applications that help businesses:
 <script src="http://ajsingh273.github.io/widgets/javascripts/event-script.js" type="text/javascript"></script>
 <div id="event-container"></div>
 
-	<script src="http://ajsingh273.github.io/widgets/javascripts/event-script.js" type="text/javascript"></script>
+	<script src="http://internationaltradeadministration.github.io/widgets/javascripts/event-script.js" type="text/javascript"></script>
 	<div id="event-container"></div>
