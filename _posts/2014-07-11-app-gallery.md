@@ -27,6 +27,7 @@ Apps will update automatically with new feeds and data.
 
 	<script src="http://internationaltradeadministration.github.io/widgets/javascripts/articles-script.js" type="text/javascript"></script>
 	<div id="articles-container"></div>
+	
 </br>
 
 <script src="http://ajsingh273.github.io/widgets/javascripts/reports-script.js" type="text/javascript"></script>
