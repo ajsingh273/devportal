@@ -21,4 +21,5 @@ We are particularly interested in applications that help businesses:
 
 **Export USA** advertises itself as "the official showcase for American-made products and services" and helps U.S. exporters find overseas buyers and distributors.  [The Export USA home page](http://www.thinkglobal.us) provides Trade Resources for U.S. companies by displaying the most current [Market Research Reports](market-research-library.html) and [Trade Events](trade-events.html) from ITA.
 
-#<a href="app-gallery.html">Available Apps</a>
+</br>
+#<a href="app-gallery.html">App Gallery</a>
