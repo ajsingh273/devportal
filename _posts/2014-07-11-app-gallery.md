@@ -8,7 +8,7 @@ published: true
 #App Gallery
 
 
-Check out some of the apps that have been prepared using the available APIs. 
+Check out some of the apps that have been developed using the available APIs. 
 
 To include any of these apps on your page: 
 
