@@ -298,7 +298,7 @@ progress, progress[role] {
 }
 
 .skill-1::-moz-progress-bar {
-  background: #000;
+  background: #16a085;
 }
 
 .skill-2::-webkit-progress-value {
@@ -306,7 +306,7 @@ progress, progress[role] {
 }
 
 .skill-2::-moz-progress-bar {
-  background: #000;
+  background: #16a085;
 }
 
 .skill-3::-webkit-progress-value {
@@ -314,7 +314,7 @@ progress, progress[role] {
 }
 
 .skill-3::-moz-progress-bar {
-  background: #000;
+  background: #16a085;
 }
 
 .skill-4::-webkit-progress-value {
@@ -322,7 +322,7 @@ progress, progress[role] {
 }
 
 .skill-4::-moz-progress-bar {
-  background: #000;
+  background: #16a085;
 }
 
 

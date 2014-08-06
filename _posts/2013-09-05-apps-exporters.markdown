@@ -23,3 +23,7 @@ We are particularly interested in applications that help businesses:
 
 </br>
 #<a href="widgets.html">Trade Widgets</a>
+
+
+</br>
+#<a href="widgets2.html">3rd Party Widgets</a>
