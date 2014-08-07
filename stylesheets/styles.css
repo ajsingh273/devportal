@@ -228,6 +228,11 @@ color: #08c;
 font-weight:bold;
 }
 
+section p a {
+color: #08c;
+font-weight:normal;
+}
+
 #home {
 background:#0B5394;
 color: #fff;
