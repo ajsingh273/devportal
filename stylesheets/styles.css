@@ -119,6 +119,15 @@ img {
 outline:none;
 }
 
+td img {
+
+ box-shadow: 3px 3px 2px #888888;
+}
+
+section img {
+float:left;margin:0 20px 0 0; max-width:300px;
+}
+
 img a{
 border:none;
 outline:none;
@@ -225,7 +234,7 @@ border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-
 
 section a {
 color: #08c;
-font-weight:bold;
+
 }
 
 section p a {

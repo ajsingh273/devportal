@@ -63,10 +63,10 @@
 
 	function main() { 
 	    $(document).ready(function($) {
-				if (!$("link[href='http://ajsingh273.github.io/devportal/stylesheets/trade-widgets.css']").length){
-					$('<script src="http://ajsingh273.github.io/devportal/javascripts/spin.js" type="text/javascript"></script>').appendTo("head");
-					$('<script src="http://ajsingh273.github.io/devportal/javascripts/trade-widget-vars.js" type="text/javascript"></script>').appendTo("head");
-					$('<link href="http://ajsingh273.github.io/devportal/stylesheets/trade-widgets.css" rel="stylesheet">').appendTo("head");
+				if (!$("link[href='http://developer.trade.gov/stylesheets/trade-widgets.css']").length){
+					$('<script src="http://developer.trade.gov/javascripts/spin.js" type="text/javascript"></script>').appendTo("head");
+					$('<script src="http://developer.trade.gov/javascripts/trade-widget-vars.js" type="text/javascript"></script>').appendTo("head");
+					$('<link href="http://developer.trade.gov/stylesheets/trade-widgets.css" rel="stylesheet">').appendTo("head");
 				}
 				var container = "";
 				container += ('<p class="widget-title">Market Research Reports</p>');
