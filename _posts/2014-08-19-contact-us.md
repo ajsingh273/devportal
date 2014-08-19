@@ -4,6 +4,8 @@ layout: body
 title: Contact Us
 ---
 
+#<a href="contact-us.html">Contact Us</a>
+
 **Email Us**
 Please email our [Data Services address](mailto:DataServices@trade.gov) if you would like to contact us directly.
 
