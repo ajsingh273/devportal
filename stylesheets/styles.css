@@ -284,6 +284,20 @@ border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-
 margin: 0px;
 }
 
+.imageBox {
+		position: relative;
+		float: right;
+		}
+		.imageBox .hoverImg {
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: none;
+		
+	}
+		.imageBox:hover .hoverImg {
+			display: block;
+		}
 
 #foot {
 background:transparent;
