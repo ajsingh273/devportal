@@ -14,7 +14,8 @@ This API provides metadata for country and industry reports that are produced by
 
 ##Resource URL
 
-    http://api.trade.gov/market_research_library/search
+<a href="http://api.trade.gov/market_research_library/search"><pre>http://api.trade.gov/market_research_library/search</pre></a>
+
 </br>
 ##Search Parameters
 
@@ -22,31 +23,36 @@ This API provides metadata for country and industry reports that are produced by
 
 Returns market research reports for a match in the description or title fields.
 
-    http://api.trade.gov/market_research_library/search?q=<keyword>
+<a href="http://api.trade.gov/market_research_library/search?q=<keyword>"><pre>http://api.trade.gov/market_research_library/search?q=<keyword></pre></a>
 
 #####Example:
 
-    http://api.trade.gov/market_research_library/search?q=modernization
+    
+<a href="http://api.trade.gov/market_research_library/search?q=modernization"><pre>http://api.trade.gov/market_research_library/search?q=modernization</pre></a>
+
+    
 </br>
 ###countries
 
 Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).
-
-    http://api.trade.gov/market_research_library/search?countries=<country name>
+    
+<a href="http://api.trade.gov/market_research_library/search?countries=<country name>"><pre>http://api.trade.gov/market_research_library/search?countries=<country name></pre></a>
 
 #####Example:
 
-    http://api.trade.gov/market_research_library/search.json?countries=MX
+<a href="http://api.trade.gov/market_research_library/search.json?countries=MX"><pre>http://api.trade.gov/market_research_library/search.json?countries=MX</pre></a>
+
 </br>
 ###industry
 
 Returns market research reports for a specific [industry](industry-list-market-research-library.html)
 
-    http://api.trade.gov/market_research_library/search.json?industry=<industry name>
+<a href="http://api.trade.gov/market_research_library/search.json?industry=<industry name>"><pre>http://api.trade.gov/market_research_library/search.json?industry=<industry name></pre></a>
 
 #####Example:
 
-    http://api.trade.gov/market_research_library/search.json?industry=agribusiness
+<a href="http://api.trade.gov/market_research_library/search.json?industry=agribusiness"><pre>http://api.trade.gov/market_research_library/search.json?industry=agribusiness</pre></a>
+
 </br>
 ###size + offset
 
@@ -54,7 +60,8 @@ The size parameter allows you to configure the maximum amount of hits to be retu
 
 #####Example:
 
-    http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1
+<a href=" http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1"><pre> http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1</pre></a>
+
 </br>
 ##Return Values
 
