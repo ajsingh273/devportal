@@ -11,7 +11,7 @@ The Trade News & Articles API provides in-depth news and articles written by Tra
 
 ##Resource URL
 
-    http://api.trade.gov/trade_articles/search
+<a href="http://api.trade.gov/trade_articles/search"><pre>http://api.trade.gov/trade_articles/search</pre></a>
 </br>
 ##Request Methods
 
@@ -23,7 +23,7 @@ Returns articles for a match in the content and body fields.
 
 #####Example:
 
-    http://api.trade.gov/trade_articles/search?q=logistics
+<a href="http://api.trade.gov/trade_articles/search?q=logistics"><pre>http://api.trade.gov/trade_articles/search?q=logistics</pre></a>
 </br>
 ###evergreen
 
@@ -33,7 +33,7 @@ Flag to designate articles that are always relevant to particular topic.
 
 #####Example:
 
-    http://api.trade.gov/trade_articles/search?evergreen=true
+<a href="http://api.trade.gov/trade_articles/search?evergreen=true"><pre>http://api.trade.gov/trade_articles/search?evergreen=true</pre></a>
 </br>
 ###pub_date
 ####pub_date_start
@@ -44,7 +44,7 @@ Returns articles created on or after a specific date.
 
 #####Example
 
-    http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04
+<a href="http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04"><pre>http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04</pre></a>
 </br>
 ####pub_date_end
 
@@ -54,7 +54,7 @@ Returns articles created on or before a specified date.
 
 #####Example
 
-    http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07
+<a href="http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07"><pre>http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07</pre></a>
 </br>
 ###update_date
 
@@ -64,7 +64,7 @@ Returns articles created on a specified date.
 
 #####Example
 
-    http://api.trade.gov/trade_articles/search?update_date=2013-04-30
+<a href="http://api.trade.gov/trade_articles/search?update_date=2013-04-30"><pre>http://api.trade.gov/trade_articles/search?update_date=2013-04-30</pre></a>
 </br>
 ###size + offset
 
@@ -72,7 +72,7 @@ The size parameter allows you to configure the maximum amount of hits to be retu
 
 #####Example:
 
-    http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1
+<a href="http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1"><pre>http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1</pre></a>
 </br>   
 ##Return Values
 

@@ -23,7 +23,7 @@ This API provides metadata for country and industry reports that are produced by
 
 Returns market research reports for a match in the description or title fields.
 
-<a href="http://api.trade.gov/market_research_library/search?q=<keyword>"><pre>http://api.trade.gov/market_research_library/search?q=<keyword></pre></a>
+	http://api.trade.gov/market_research_library/search?q=<keyword>
 
 #####Example:
 
@@ -36,7 +36,7 @@ Returns market research reports for a match in the description or title fields.
 
 Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).
     
-<a href="http://api.trade.gov/market_research_library/search?countries=<country name>"><pre>http://api.trade.gov/market_research_library/search?countries=<country name></pre></a>
+	http://api.trade.gov/market_research_library/search?countries=<country name>
 
 #####Example:
 
@@ -47,7 +47,7 @@ Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org
 
 Returns market research reports for a specific [industry](industry-list-market-research-library.html)
 
-<a href="http://api.trade.gov/market_research_library/search.json?industry=<industry name>"><pre>http://api.trade.gov/market_research_library/search.json?industry=<industry name></pre></a>
+	http://api.trade.gov/market_research_library/search.json?industry=<industry name>
 
 #####Example:
 
