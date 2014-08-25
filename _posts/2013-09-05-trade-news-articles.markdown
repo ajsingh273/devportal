@@ -19,7 +19,7 @@ The Trade News & Articles API provides in-depth news and articles written by Tra
 
 Returns articles for a match in the content and body fields.
 
-    http://api.trade.gov/trade_articles/search?q=<keyword>
+    http://api.trade.gov/trade_articles/search?q={keyword}
 
 #####Example:
 

@@ -20,7 +20,7 @@ The output format for this API is JSON.
 
 Searches for a match within the event_name and description fields.
 
-    http://api.trade.gov/trade_events/search?q={term}
+    http://api.trade.gov/trade_events/search?q={keyword}
 
 #####Example:
 
@@ -30,17 +30,17 @@ Searches for a match within the event_name and description fields.
 
 Searches for specific controlled [industry names](industry-list-trade-events.html)
 
-    http://api.trade.gov/trade_events/search?industry={term}
+    http://api.trade.gov/trade_events/search?industry={industry name}
 
 #####Example:
 
-<a href="http://api.trade.gov/trade_events/search?industry=Agribusiness"><pre>http://api.trade.gov/trade_events/search?industry=Agribusiness</pre></a>
+<a href="http://api.trade.gov/trade_events/search?industry=Chemical"><pre>http://api.trade.gov/trade_events/search?industry=Chemical</pre></a>
 </br>
 ###countries
 
 Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).
 
-    http://api.trade.gov/trade_events/search?countries={term}
+    http://api.trade.gov/trade_events/search?countries={country code}
 
 #####Example:
 
