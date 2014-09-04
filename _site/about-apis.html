@@ -34,7 +34,7 @@
         <p class="view"><a href="faq.html">FAQs</a></p>
         <p class="view"><a href="change-log.html">Change Log</a></p>
         <p class="view"><a href="tos.html">Terms of Service</a></p>
-        <p class="view"><a href="contact-us.html">Contact US</a></p>
+        <p class="view"><a href="contact-us.html">Contact Us</a></p>
 
         <!--<ul>
           <li><a href="https://github.com/ajsingh273/devportal/zipball/master">Download <strong>ZIP File</strong></a></li>
@@ -86,7 +86,16 @@
 
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
   </body>
   
 </html>

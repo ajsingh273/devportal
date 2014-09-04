@@ -5,7 +5,8 @@ title: Trade Leads API
 published: true
 ---
 
-#<a href="market-research-library.html">Trade Leads API</a>
+#<a href="trade-leads.html">Trade Leads API</a>
+
 The Trade Leads API provides contract opportunities for U.S. businesses selling their products and services overseas. These leads come from a variety of sources and we continue to expand the number of leads available.
 
 We currently provide trade leads, procurement opportunities, and contract notifications from the UK and from Canada.  We will soon be including leads from the State Department’s Business Information Database System (BIDS) and from FedBizOpps.  All leads are consolidated into one endpoint.
