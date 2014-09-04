@@ -25,7 +25,7 @@ In addition to meeting these requirements we include additional documentation an
 In addition to publishing a growing number of datasets, ITA is using the datasets to populate its own Web sites.  ITA will be publishing new datasets on an ongoing basis to help developers help exporters, and to expand the breadth of information available on trade.gov and export.gov.
 
 
-#<a href="about-apis.html">What's Possible</a>
+###What's Possible
 
 Developers have a wealth of opportunities to turn ITA's trade information into useful and valuable applications for exporters.  Immediate ideas for using the trade information include:
 
