@@ -40,18 +40,18 @@ Returns office locations based on ISO [alpha-2 country codes](http://www.iso.org
 
 #####Example:
 
-<a href="http://api.trade.gov/market_research_library/search.json?countries=MX"><pre>http://api.trade.gov/market_research_library/search.json?countries=MX</pre></a>
+<a href="http://api.trade.gov/market_research_library/search.json?countries=MX"><pre>http://api.trade.gov/market_research_library/search?countries=MX</pre></a>
 
 </br>
 ###industry
 
 Returns market research reports for a specific [industry](industry-list-market-research-library.html)
 
-	http://api.trade.gov/market_research_library/search.json?industry={industry name}
+	http://api.trade.gov/market_research_library/search?industry={industry name}
 
 #####Example:
 
-<a href="http://api.trade.gov/market_research_library/search.json?industry=agribusiness"><pre>http://api.trade.gov/market_research_library/search.json?industry=agribusiness</pre></a>
+<a href="http://api.trade.gov/market_research_library/search.json?industry=agribusiness"><pre>http://api.trade.gov/market_research_library/search?industry=agribusiness</pre></a>
 
 </br>
 ###size + offset
