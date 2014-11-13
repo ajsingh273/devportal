@@ -29,8 +29,9 @@
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
-                    <div class="content" style="margin-left:-20px;">
-                         <a href="market-research-library.html">FAQs</a>
+                    <div class="content" style="margin-left:-40px;">
+                    <p class="view"><a href="faqs-api.html">FAQs</a></p>
+        			<p class="view"><a href="fta-tariff-rate.html">FTA Tariff Rate</a></p>
                     </div>
                 </div>
             </div>
@@ -55,10 +56,12 @@
 
 <p>This API provides contact and address information for all of ITA’s domestic and international export assistance centers. Incorporating these listings into directories of business counseling services is one example of how developers can use this API to assist exporters.</p>
 
+<p><a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a></p>
+
 <h2>Resource URL</h2>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search"><pre>http://api.trade.gov/ita_office_locations/search</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search"><pre>http://api.trade.gov/ita_office_locations/search</pre></a></div>
+
 
 <h2>Search Parameters</h2>
 
@@ -71,15 +74,15 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo</pre></a></div>
+
 
 <h3>city</h3>
 
 <p>Returns office locations based on city name</p>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo</pre></a></div>
+
 
 <h3>country</h3>
 
@@ -90,8 +93,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search?country=BR"><pre> http://api.trade.gov/ita_office_locations/search?country=BR</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search?country=BR"><pre> http://api.trade.gov/ita_office_locations/search?country=BR</pre></a></div>
+
 
 <h3>state</h3>
 
@@ -103,8 +106,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search?state=TN"><pre>http://api.trade.gov/ita_office_locations/search?state=TN</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search?state=TN"><pre>http://api.trade.gov/ita_office_locations/search?state=TN</pre></a></div>
+
 
 <h3>size + offset</h3>
 
@@ -112,9 +115,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1"><pre>http://api.trade.gov/ita_office_locations/search?country=BR&amp;size=1&amp;offset=1</pre></a></p>
+<div><a href="http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1"><pre>http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1</pre></a></div>
 
-<p></br></p>
 
 <h2>Data Elements</h2>
 
@@ -127,47 +129,51 @@
 </thead>
 <tbody>
 <tr>
-<td> <pre><code>id</code></pre>                </td>
+<td> id                </td>
 <td> Unique identifier for post                                      </td>
 </tr>
 <tr>
-<td> <pre><code>post</code></pre>              </td>
+<td> post              </td>
 <td> Name of the post (Default sort)                                 </td>
 </tr>
 <tr>
-<td> <pre><code>office_name</code></pre>       </td>
+<td> office_name       </td>
 <td> Office Name                                                     </td>
 </tr>
 <tr>
-<td> <pre><code>state</code></pre>             </td>
+<td> state             </td>
 <td> State abbreviation, for domestic offices                        </td>
 </tr>
 <tr>
-<td> <pre><code>city</code></pre>              </td>
+<td> city              </td>
 <td> City                                                            </td>
 </tr>
 <tr>
-<td> <pre><code>address</code></pre>           </td>
+<td> address           </td>
 <td> Street address of office                                        </td>
 </tr>
 <tr>
-<td> <pre><code>email</code></pre>             </td>
+<td> country           </td>
+<td> Country                                                         </td>
+</tr>
+<tr>
+<td> email             </td>
 <td> Office email address                                            </td>
 </tr>
 <tr>
-<td> <pre><code>fax</code></pre>               </td>
+<td> fax               </td>
 <td> Fax number                                                      </td>
 </tr>
 <tr>
-<td> <pre><code>mail_instructions</code></pre> </td>
+<td> mail_instructions </td>
 <td> Snail mail instructions                                         </td>
 </tr>
 <tr>
-<td> <pre><code>phone</code></pre>             </td>
+<td> phone             </td>
 <td> Office phone number                                             </td>
 </tr>
 <tr>
-<td> <pre><code>post_type</code></pre>         </td>
+<td> post_type         </td>
 <td> Type of post (domestic or international)                        </td>
 </tr>
 </tbody>

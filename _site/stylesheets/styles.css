@@ -222,6 +222,42 @@ color:#494949;
 }
 
 
+[class*='btn-'] {
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+
+	-webkit-transition: background-color 0.1s linear;
+	-moz-transition: background-color 0.1s linear;
+	-o-transition: background-color 0.1s linear;
+	  transition: background-color 0.1s linear;	
+}
+
+	[class*='btn-']:hover {
+		cursor: pointer;
+	}
+
+	.btn-blue {
+	font-size:12px;
+	color: #08C;
+	font-weight:bold;
+		background-color: #ECECEC;	
+		border: 1px solid #ECECEC;
+	}
+
+		.btn-blue:hover {
+		border: 1px solid #08C;
+			text-decoration: none;
+		}
+
+		.btn-blue:active {
+			background-color: rgb( 42, 91, 191 );	
+		}
+
+	
+
 .clearfix:after {
      visibility: hidden;
      display: block;

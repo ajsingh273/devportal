@@ -16,9 +16,11 @@ We are particularly interested in applications that help businesses:
 * Expand their existing exporting business.
 
 
-###ITA Trade Widgets
+###ITA Explorer App
 
-<div style="margin-bottom:100px;"><a href="widgets.html"><img src="images/itawidget.png" width="150" style="float:right;margin:0 0 0 25px;"/></a> <strong>ITA</strong> has created several widgets that take advantage of the APIs’ search capabilities so you don’t have to.  Visit the <a href="widgets.html">ITA Trade Widgets page</a> for code that you can immediately add to your Web page or mobile app.</div>
+![Explorer Sample](images/explorersample.png)
+
+<a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">LAUNCH</a>
 
 ------
 

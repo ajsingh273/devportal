@@ -29,8 +29,9 @@
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
-                    <div class="content" style="margin-left:-20px;">
-                         <a href="market-research-library.html">FAQs</a>
+                    <div class="content" style="margin-left:-40px;">
+                    <p class="view"><a href="faqs-api.html">FAQs</a></p>
+        			<p class="view"><a href="fta-tariff-rate.html">FTA Tariff Rate</a></p>
                     </div>
                 </div>
             </div>
@@ -55,24 +56,26 @@
 
 <p>The Trade News &amp; Articles API provides in-depth news and articles written by Trade Specialists working in the Federal government.  The news and articles are categorized by industry, country, and topic area.  Developers can use this API to provide exporters with the latest insights into their industry and into the countries with which they would like to do business.</p>
 
+<p><a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a></p>
+
 <h2>Resource URL</h2>
 
-<p><a href="http://api.trade.gov/trade_articles/search"><pre>http://api.trade.gov/trade_articles/search</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search"><pre>http://api.trade.gov/trade_articles/search</pre></a></div>
+
 
 <h2>Request Methods</h2>
 
 <h3>keyword</h3>
 
-<p>Returns articles for a match in the content and body fields.</p>
+<p>Returns articles for a match in the content and title fields.</p>
 
 <pre><code>http://api.trade.gov/trade_articles/search?q={keyword}
 </code></pre>
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?q=logistics"><pre>http://api.trade.gov/trade_articles/search?q=logistics</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?q=logistics"><pre>http://api.trade.gov/trade_articles/search?q=logistics</pre></a></div>
+
 
 <h3>evergreen</h3>
 
@@ -83,8 +86,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?evergreen=true"><pre>http://api.trade.gov/trade_articles/search?evergreen=true</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?evergreen=true"><pre>http://api.trade.gov/trade_articles/search?evergreen=true</pre></a></div>
+
 
 <h3>pub_date</h3>
 
@@ -97,8 +100,8 @@
 
 <h5>Example</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04"><pre>http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04"><pre>http://api.trade.gov/trade_articles/search?pub_date_start=2013-01-04</pre></a></div>
+
 
 <h4>pub_date_end</h4>
 
@@ -109,8 +112,8 @@
 
 <h5>Example</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07"><pre>http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07"><pre>http://api.trade.gov/trade_articles/search?pub_date_end=2013-01-07</pre></a></div>
+
 
 <h3>update_date</h3>
 
@@ -121,8 +124,8 @@
 
 <h5>Example</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?update_date=2013-04-30"><pre>http://api.trade.gov/trade_articles/search?update_date=2013-04-30</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?update_date=2013-04-30"><pre>http://api.trade.gov/trade_articles/search?update_date=2013-04-30</pre></a></div>
+
 
 <h3>size + offset</h3>
 
@@ -130,8 +133,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1"><pre>http://api.trade.gov/trade_articles/search?q=logistics&amp;size=1&amp;offset=1</pre></a>
-</br></p>
+<div><a href="http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1"><pre>http://api.trade.gov/trade_articles/search?q=logistics&size=1&offset=1</pre></a></div>
+
 
 <h2>Return Values</h2>
 
@@ -144,67 +147,67 @@
 </thead>
 <tbody>
 <tr>
-<td> <pre><code>id</code></pre>                </td>
+<td> id                </td>
 <td> Unique identifier for post                                      </td>
 </tr>
 <tr>
-<td> <pre><code>evergreen</code></pre> </td>
+<td> evergreen </td>
 <td> Flag to designate "timeless" articles, always topically relevant </td>
 </tr>
 <tr>
-<td> <pre><code>content</code></pre>   </td>
+<td> content   </td>
 <td> Body of the article </td>
 </tr>
 <tr>
-<td> <pre><code>pub_date</code></pre> </td>
+<td> pub_date </td>
 <td> Earliest date article can be published (default sort) </td>
 </tr>
 <tr>
-<td> <pre><code>title</code></pre> </td>
+<td> title </td>
 <td> Title of the article </td>
 </tr>
 <tr>
-<td> <pre><code>update_date</code></pre> </td>
+<td> update_date </td>
 <td> Date the article was last updated </td>
 </tr>
 <tr>
-<td> <pre><code>content_type</code></pre> </td>
+<td> content_type </td>
 <td> Type of content embodied by the article </td>
 </tr>
 <tr>
-<td> <pre><code>export_phase</code></pre> </td>
+<td> export_phase </td>
 <td> Phase of exporting that a business should be in to benefit from the article </td>
 </tr>
 <tr>
-<td> <pre><code>industry</code></pre> </td>
+<td> industry </td>
 <td> Industry category assigned to this article </td>
 </tr>
 <tr>
-<td> <pre><code>topic</code></pre> </td>
+<td> topic </td>
 <td> Topic assigned to this article </td>
 </tr>
 <tr>
-<td> <pre><code>subtopic</code></pre> </td>
+<td> subtopic </td>
 <td> Subtopic assigned to this article </td>
 </tr>
 <tr>
-<td> <pre><code>trade_region</code></pre> </td>
+<td> trade_region </td>
 <td> Trade region covered by an article's content </td>
 </tr>
 <tr>
-<td> <pre><code>geo_region</code></pre> </td>
+<td> geo_region </td>
 <td> World region covered by an article's content </td>
 </tr>
 <tr>
-<td> <pre><code>geo_subregion</code></pre> </td>
+<td> geo_subregion </td>
 <td> Would sub-region covered by an article's content </td>
 </tr>
 <tr>
-<td> <pre><code>country</code></pre> </td>
+<td> country </td>
 <td> Country covered by an article's content </td>
 </tr>
 <tr>
-<td> <pre><code>keyword</code></pre> </td>
+<td> keyword </td>
 <td> Keywords assigned by the article's author </td>
 </tr>
 </tbody>

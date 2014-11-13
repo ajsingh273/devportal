@@ -29,8 +29,9 @@
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
-                    <div class="content" style="margin-left:-20px;">
-                         <a href="market-research-library.html">FAQs</a>
+                    <div class="content" style="margin-left:-40px;">
+                    <p class="view"><a href="faqs-api.html">FAQs</a></p>
+        			<p class="view"><a href="fta-tariff-rate.html">FTA Tariff Rate</a></p>
                     </div>
                 </div>
             </div>
@@ -62,11 +63,12 @@
 </ul>
 
 
+<p><a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a></p>
+
 <h2>Resource URL</h2>
 
-<p><a href="http://api.trade.gov/market_research_library/search"><pre>http://api.trade.gov/market_research_library/search</pre></a></p>
+<div><a href="http://api.trade.gov/market_research_library/search"><pre>http://api.trade.gov/market_research_library/search</pre></a></div>
 
-<p></br></p>
 
 <h2>Search Parameters</h2>
 
@@ -79,9 +81,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/market_research_library/search?q=modernization"><pre>http://api.trade.gov/market_research_library/search?q=modernization</pre></a></p>
+<div><a href="http://api.trade.gov/market_research_library/search?q=modernization"><pre>http://api.trade.gov/market_research_library/search?q=modernization</pre></a></div>
 
-<p></br></p>
 
 <h3>countries</h3>
 
@@ -92,9 +93,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/market_research_library/search.json?countries=MX"><pre>http://api.trade.gov/market_research_library/search?countries=MX</pre></a></p>
+<div><a href="http://api.trade.gov/market_research_library/search?countries=MX"><pre>http://api.trade.gov/market_research_library/search?countries=MX</pre></a></div>
 
-<p></br></p>
 
 <h3>industry</h3>
 
@@ -105,9 +105,8 @@
 
 <h5>Example:</h5>
 
-<p><a href="http://api.trade.gov/market_research_library/search.json?industry=agribusiness"><pre>http://api.trade.gov/market_research_library/search?industry=agribusiness</pre></a></p>
+<div><a href="http://api.trade.gov/market_research_library/search?industry=agribusiness"><pre>http://api.trade.gov/market_research_library/search?industry=agribusiness</pre></a></div>
 
-<p></br></p>
 
 <h3>size + offset</h3>
 
@@ -115,9 +114,8 @@
 
 <h5>Example:</h5>
 
-<p><a href=" http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1"><pre> http://api.trade.gov/market_research_library/search?country=BR&amp;size=1&amp;offset=1</pre></a></p>
+<div><a href=" http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1"><pre> http://api.trade.gov/market_research_library/search?country=BR&size=1&offset=1</pre></a></div>
 
-<p></br></p>
 
 <h2>Return Values</h2>
 
@@ -130,35 +128,35 @@
 </thead>
 <tbody>
 <tr>
-<td> <pre><code>id</code></pre>             </td>
+<td> id              </td>
 <td> Unique identifier assigned to the event                         </td>
 </tr>
 <tr>
-<td> <pre><code>countries</code></pre>     </td>
+<td> countries       </td>
 <td> Country category(ies) assigned to the report                    </td>
 </tr>
 <tr>
-<td> <pre><code>description</code></pre>     </td>
+<td> description     </td>
 <td> Abstract of the report’s content                                </td>
 </tr>
 <tr>
-<td> <pre><code>expiration_date</code></pre> </td>
+<td> expiration_date </td>
 <td> Date when the report is no longer valid                         </td>
 </tr>
 <tr>
-<td> <pre><code>industry</code></pre>        </td>
+<td> industry        </td>
 <td> Industry category assigned to the report                        </td>
 </tr>
 <tr>
-<td> <pre><code>report_type</code></pre>     </td>
+<td> report_type     </td>
 <td> The report type can either be CCG, Best Market Report, or Market Research Report</td>
 </tr>
 <tr>
-<td> <pre><code>title</code></pre>           </td>
+<td> title           </td>
 <td> Report title  (default sort)                                    </td>
 </tr>
 <tr>
-<td> <pre><code>url</code></pre>             </td>
+<td> url             </td>
 <td> URL for the report                                              </td>
 </tr>
 </tbody>
