@@ -9,8 +9,6 @@ published: true
 
 The Trade News & Articles API provides in-depth news and articles written by Trade Specialists working in the Federal government.  The news and articles are categorized by industry, country, and topic area.  Developers can use this API to provide exporters with the latest insights into their industry and into the countries with which they would like to do business.
 
-<a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a>
-
 ##Resource URL
 
 <div><a href="http://api.trade.gov/trade_articles/search"><pre>http://api.trade.gov/trade_articles/search</pre></a></div>
