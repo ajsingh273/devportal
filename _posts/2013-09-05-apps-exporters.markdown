@@ -17,11 +17,7 @@ We are particularly interested in applications that help businesses:
 
 ------
 
-###ITA Explorer App
-
-![Explorer Sample](images/explorersample.png)
-
-<a href="http://govwizely.github.io/explorer/#/" class="btn btn-blue btn-large hero-box-button">LAUNCH</a>
+#Search the data using [ITA Explorer App](explorer.html)
 
 ------
 
