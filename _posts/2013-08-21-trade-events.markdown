@@ -11,7 +11,7 @@ published: true
 
 The Trade Events API provides data on events for U.S. businesses interested in selling their products and services overseas.  These events include industry conferences, webinars, lectures and trade missions organized by the U.S. Dept. of Commerce. Developers can use this API to keep businesses aware of the latest events in their industry or location.
 
-Test the API using the [demo search app](http://govwizely.github.io/explorer/#/trade-events)
+Test the API using the [demo search app](http://internationaltradeadministration.github.io/explorer/#/trade-events)
 
 ##Resource URL
 

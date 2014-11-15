@@ -11,9 +11,9 @@ ITA has developed simple search apps for each API designed to help users easily 
 
 Each API has an associated search app for demonstration purposes:
 
-* [Market Research Library](http://govwizely.github.io/explorer/#/market-research-library)
-* [Consolidated Screening List](http://govwizely.github.io/explorer/#/consolidated-screening-list-entries)
-* [Trade Events](http://govwizely.github.io/explorer/#/trade-events)
-* [Trade Leads](http://govwizely.github.io/explorer/#/trade-leads)
-* [ITA Offices & Centers](http://govwizely.github.io/explorer/#/ita-office-locations)
+* [Market Research Library](http://internationaltradeadministration.github.io/explorer/#/market-research-library)
+* [Consolidated Screening List](http://internationaltradeadministration.github.io/explorer/#/consolidated-screening-list-entries)
+* [Trade Events](http://internationaltradeadministration.github.io/explorer/#/trade-events)
+* [Trade Leads](http://internationaltradeadministration.github.io/explorer/#/trade-leads)
+* [ITA Offices & Centers](http://internationaltradeadministration.github.io/explorer/#/ita-office-locations)
 * [Trade News & Articles](#)

@@ -23,7 +23,7 @@ Developers can use this API to keep businesses aware of the latest leads in part
 
 The output format for this API is JSON.  Resource URL and Search Parameters can be found towards the bottom of this page.
 
-Test the API using the [demo search app](http://govwizely.github.io/explorer/#/trade-leads)
+Test the API using the [demo search app](http://internationaltradeadministration.github.io/explorer/#/trade-leads)
 
 ##Resource URL
 

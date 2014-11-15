@@ -15,7 +15,7 @@ This API provides metadata for country and industry reports that are produced by
 * Best Market Reports
 * Country Commercial Guides
 
-Test the API using the [demo search app](http://govwizely.github.io/explorer/#/market-research-library)
+Test the API using the [demo search app](http://internationaltradeadministration.github.io/explorer/#/market-research-library)
 
 ##Resource URL
 

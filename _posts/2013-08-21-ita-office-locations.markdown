@@ -11,7 +11,7 @@ published: true
 
 This API provides contact and address information for all of ITA’s domestic and international export assistance centers. Incorporating these listings into directories of business counseling services is one example of how developers can use this API to assist exporters.
 
-Test the API using the [demo search app](http://govwizely.github.io/explorer/#/ita-office-locations)
+Test the API using the [demo search app](http://internationaltradeadministration.github.io/explorer/#/ita-office-locations)
 
 ##Resource URL
 
