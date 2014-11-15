@@ -22,17 +22,15 @@
         </br></br>
 		<h3>Available APIs</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
-        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
+        <p class="view"><a href="consolidated-screening-list.html">Consolidated Screening List</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
         <p class="view"><a href="trade-leads.html">Trade Leads</a></p>
-        <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
+        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
                     <div class="content" style="margin-left:-40px;">
-                    <p class="view"><a href="#">FAQs</a></p>
-                    <p class="view"><a href="#">Consolidated Screening List</a></p>
-        			<p class="view"><a href="#">FTA Tariff Rate</a></p>
+                    <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
                     </div>
                 </div>
             </div>
@@ -53,248 +51,455 @@
       </header>
       <section >
       <div style="padding:0 40px;">
-        <h2>ITA Consolidated Screening List</h2>
+        <h1>ITA Consolidated Screening List</h1>
 
-<p>ITA publishes the Consolidated Screening List, in conjunction with the Departments of Commerce, State and the Treasury, to help exporters screen potential parties with whom they might do business. Developers can use this API to keep exporters aware of foreign companies that have restrictions placed upon them by the U.S. Government.</p>
+<h2>Background</h2>
 
-<p>In the event that a company, entity, or person on the list appears to match a party potentially involved in an export transaction, businesses must conduct additional due diligence before proceeding. When doing business with someone on this list there may be:</p>
+<p>The Consolidated Screening List API consolidates nine export screening lists of the Departments of Commerce, State and the Treasury into one spreadsheet as an aide to industry in conducting electronic screens of potential parties to regulated transactions. In the event that a company, entity or person on the list appears to match a <em>party</em> potentially involved in an export transaction, additional due diligence should be conducted before proceeding. There may be a strict export prohibition, requirement for seeking a license application, evaluation of the end-use or user to ensure it does not result in an activity prohibited by any U.S. export regulations, or other restriction.</p>
+
+<h2>Instruct Users How to Stay Compliant</h2>
+
+<p>Developers must provide the following information to their users to help them <a href="http://export.gov/ecr/index.asp">stay compliant with exporting law</a>.</p>
+
+<p><em>If a party to a user’s transaction matches the name of a party on the consolidated list, the user must check the official publication of restricted parties in the <a href="http://www.gpoaccess.gov/fr/">Federal Register</a> or the official lists of restricted parties maintained on the websites of the Departments of Commerce, State and the Treasury to ensure full compliance with all of the terms and conditions of the restrictions placed on the parties on this list.  Links to these websites are found below as well as in the “Source List URL” and “Source Information URL” fields that accompany each party returned in the API.  These links connect users to the specific webpage that contain additional information about how to use each specific list.</em></p>
+
+<p>Test the API using the <a href="http://govwizely.github.io/explorer/#/consolidated-screening-list-entries">demo search app</a></p>
+
+<h2>Resource URL</h2>
+
+<p>The below URL will search across all nine screening lists. To search a subset, see sources below.</p>
+
+<p><a href="http://api.trade.gov/consolidated_screening_list/search">http://api.trade.gov/consolidated_screening_list/search</a></p>
+
+<h2>Search Parameters for consolidated screening list sources</h2>
+
+<h3>keyword</h3>
+
+<p>Searches for a match within the <strong>name</strong>, <strong>remarks</strong>, and <strong>title</strong> fields from all nine lists.</p>
+
+<pre><code>http://api.trade.gov/consolidated_screening_list/search?q={term}
+</code></pre>
+
+<p><strong><em>Example</em></strong></p>
+
+<p><a href="http://api.trade.gov/consolidated_screening_list/search?q=chemical">http://api.trade.gov/consolidated_screening_list/search?q=chemical</a></p>
+
+<h3>sources</h3>
+
+<p>Searches only the lists specified by the <strong>Source</strong> Abbreviation.</p>
+
+<pre><code>http://api.trade.gov/consolidated_screening_list/search?sources={csl_type}
+</code></pre>
+
+<p><strong><em>Example</em></strong></p>
+
+<p><a href="http://api.govwizely.com/consolidated_screening_list/search?sources=ISN,SDN">http://api.govwizely.com/consolidated_screening_list/search?sources=ISN,SDN</a></p>
+
+<p>Source Abbreviations as follows:</p>
 
 <ul>
-<li>A strict export prohibition</li>
-<li>A requirement for seeking a license application</li>
-<li>An evaluation of the end-use or user to ensure it does not result in an activity prohibited by any U.S. export regulations</li>
-<li>Other restrictions.</li>
+<li>Denied Persons List = <strong>DPL</strong></li>
+<li>Entity List = <strong>EL</strong></li>
+<li>Foreign Sanctions Evaders = <strong>FSE</strong></li>
+<li>ITAR Debarred = <strong>DTC</strong></li>
+<li>Nonproliferation Sanctions = <strong>ISN</strong></li>
+<li>Palestinian Legislative Council List = <strong>PLC</strong></li>
+<li>Sectoral Sanctions Identifications List = <strong>SSI</strong></li>
+<li>Specially Designated Nationals - <strong>SDN</strong></li>
+<li>Unverified List = <strong>UVL</strong></li>
 </ul>
 
 
-<h3>Information Developers Should Provide to Their Users</h3>
+<h3>countries</h3>
 
-<p>The consolidated screening list is a list of parties for which the United States Government maintains restrictions on certain exports, re-exports, or transfers of items. If a party to the user's transaction matches a party name on the consolidated list, the user must check the official publication of restricted parties in the <a href="http://www.gpoaccess.gov/fr/">Federal Register</a>. They must also check the official lists of restricted parties maintained on the web sites, populated in the <strong>source_list_ur field</strong>, of the Departments of Commerce, State and the Treasury to ensure full compliance with all of the terms and conditions of the restrictions placed on the parties on this list.</p>
+<p>Searches only parties whose <strong>country</strong> field matches the country code based on ISO <a href="http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm">alpha-2 country codes</a>.  Note:  This method allows you to search for multiple countries (plural) but will only return one country (singular) per party.</p>
 
-<p>If users have any questions related to the content of the information in the consolidated list, please refer them to the appropriate agency responsible for the list as indicated in the <strong>source</strong> field.</p>
-
-<h2>Request Methods</h2>
-
-<p>You may query the Consolidated Screening List API using the following URL templates:</p>
-
-<h4>Keyword</h4>
-
-<p>Searches for term or keyword within any field in the data set</p>
-
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?q={term}
+<pre><code>http://api.trade.gov/consolidated_screening_list/search?countries={country code}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?q=Somali
-</code></pre>
+<p><a href="http://api.trade.gov/consolidated_screening_list/search?countries=JO,PS">http://api.trade.gov/consolidated_screening_list/search?countries=JO,PS</a></p>
 
-<h4>source</h4>
+<h3>size + offset</h3>
 
-<p>Searches for one of six unique abbreviations in the <strong>source</strong> field:</p>
+<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
 
-<ol>
-<li><em>DPL</em> - Denied Persons List (Department of Commerce)</li>
-<li><em>DTC</em> - AECA Debarred List  (Department of State)</li>
-<li><em>EL</em> - Entity List (Department of Commerce)</li>
-<li><em>ISN</em> - Nonproliferation Sanctions (Department of State)</li>
-<li><em>SDN</em> - Specially Designated Nationals List (Department of Treasury)</li>
-<li><em>UVL</em> - Unverified List (Department of Commerce)</li>
-</ol>
+<p><strong><em>Example</em></strong></p>
 
+<p><a href="http://api.trade.gov/consolidated_screening_list/search?country=PS&amp;size=1&amp;offset=1">http://api.trade.gov/consolidated_screening_list/search?country=PS&amp;size=1&amp;offset=1</a></p>
 
-<h5>Template</h5>
+<h3>The Nine Screening Lists, Their Sources and Specific Fields</h3>
 
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?source={term}
-</code></pre>
+<p>Each list returns a unique set of fields.  Where appropriate, the Consolidated Screening List normalizes the field names, such as <strong>address</strong>, <strong>start_date</strong>, and <strong>federal_register_notice</strong>.</p>
 
-<h5>Example</h5>
+<h4>Department of Commerce – Bureau of Industry and Security (BIS)</h4>
 
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?source=DPL
-</code></pre>
-
-<h4>sdn_type</h4>
-
-<p>Searches for one of three unique types in the <strong>sdn_type</strong> field:</p>
-
-<ol>
-<li><em>aircraft</em></li>
-<li><em>individual</em></li>
-<li><em>vessel</em></li>
-</ol>
+<ul>
+<li><a href="http://www.bis.doc.gov/dpl/default.shtm">Denied Persons List</a> -- Individuals and entities that have been denied export privileges. Any dealings with a party on this list that would violate the terms of its denial order are prohibited.</li>
+</ul>
 
 
-<h5>Template</h5>
-
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?sdn_type={term}
-</code></pre>
-
-<h5>Example</h5>
-
-<pre><code>http://api.trade.gov/consolidated_screening_list/search.json?sdn_type=DPL
-</code></pre>
-
-<h2>Return Values</h2>
-
-<table border="0">
+<table>
+<thead>
 <tr>
-<th>Field</th>
-<th>Description</th>
+<th> Field </th>
+<th> Description </th>
 </tr>
-
+</thead>
+<tbody>
 <tr>
-<td>source</td>
-<td>Abbreviation of the list to which the entity belongs</td>
+<td> address </td>
+<td> Entity's street/PO address </td>
 </tr>
-
 <tr>
-<td>entity_number</td>
-<td>Unique id assigned by the originating list</td>
+<td> end_date </td>
+<td> The date on which the entity's inclusion on the list will be lifted, wavied, or will have expired </td>
 </tr>
-
 <tr>
-<td>sdn_type</td>
-<td>Entity type from the SDN list</td>
+<td> federal_register_notice </td>
+<td> The official source of information about the parties on this list </td>
 </tr>
-
 <tr>
-<td>programs</td>
-<td>Agency program related to the entity on the list</td>
+<td> name </td>
+<td> Entity's name </td>
 </tr>
-
 <tr>
-<td>name</td>
-<td>Entity's name</td>
+<td> remarks </td>
+<td> Additional remarks or notes regarding the company, entity, or person on the list. </td>
 </tr>
-
 <tr>
-<td>title</td>
-<td>Entity's title</td>
+<td> standard_order </td>
+<td> Whether or not (Y/N) the <a href="http://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/denied-persons-list/12-policy-guidance/list-parties-of-concern/321-the-denied-persons-list-standard-order">standard order</a> applies to the Denied Party as defined by the Bureau of Industry and Security (BIS)</td>
 </tr>
-
 <tr>
-<td>address</td>
-<td>Entity's address</td>
+<td> start_date  </td>
+<td> The effective date for the entity to be included on the list as defined by the Federal Register Notice </td>
 </tr>
-
 <tr>
-<td>city</td>
-<td>Entity's city</td>
+<td> source_list_url </td>
+<td> Location of the original list </td>
 </tr>
-
 <tr>
-<td>state</td>
-<td>Entity's state</td>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
 </tr>
-
-<tr>
-<td>country</td>
-<td>Entity's country</td>
-</tr>
-
-<tr>
-<td>federal_register_notice</td>
-<td>The official source of information about the parties on this list</td>
-</tr>
-
-<tr>
-<td>start_date</td>
-<td>The effective date of the entity on the list as defined by the Federal Register Notice</td>
-</tr>
-
-<tr>
-<td>end_date</td>
-<td>The date the entity was lifted, waived or expired on or from the lists</td>
-</tr>
-
-<tr>
-<td>standard_order</td>
-<td>Whether or not (Y/N) the standard order applies to the Denied Party as defined by the Bureau of Industry and Security (BIS)</td>
-</tr>
-
-<tr>
-<td>license_requirement</td>
-<td>The license requirement as determined by the Export Administration Regulations for the names on the Entity List (EL)</td>
-</tr>
-
-<tr>
-<td>license_policy</td>
-<td>The policy set forth in the Export Administration Regulations regarding denial of the name on the Entity 
-List (EL)</td>
-</tr>
-
-<tr>
-<td>call_sign</td>
-<td>Call sign of the vessel listed on the Specially Designated Nationals list</td>
-</tr>
-
-<tr>
-<td>vessel_type</td>
-<td>Describes the type of vessel (ferry, bulk cargo, tug) listed on the Specially Designated Nationals List </td>
-</tr>
-
-<tr>
-<td>gross_tonnage</td>
-<td>The gross weight in tons not-registered for the vessel on the Specially Designated Nationals list</td>
-</tr>
-
-<tr>
-<td>gross_register_tonnage</td>
-<td>The gross weight in tons registered for the vessel on the Specially Designated Nationals list </td>
-</tr>
-
-<tr>
-<td>vessel_flag</td>
-<td>Country flag of the vessel on the Specially Designated Nationals List</td>
-</tr>
-
-<tr>
-<td>vessel_owner</td>
-<td>Owner/Operator of the vessel on the Specially Designated Nationals List </td>
-</tr>
-
-<tr>
-<td>remarks</td>
-<td>Additional remarks or notes regarding the company, entity or person on the list</td>
-</tr>
-
-<tr>
-<td>address_number</td>
-<td>A number used to uniquely identify multiple locations of the Specially Designated Nationals (SDNs)</td>
-</tr>
-
-<tr>
-<td>address_remarks</td>
-<td>Additional remarks or notes regarding the SDN address</td>
-</tr>
-
-<tr>
-<td>alt_number</td>
-<td>A number used to uniquely identify multiple aliases of the Specially Designated Nationals (SDNs)</td>
-</tr>
-
-<tr>
-<td>alt_type</td>
-<td>Abbreviation used to identify the alias type (aka, fka, nka, etc.) </td>
-</tr>
-
-<tr>
-<td>alt_name</td>
-<td>Alias name used by the entity on the Specially Designed Nationals List or Entity List</td>
-</tr>
-
-<tr>
-<td>alt_remarks</td>
-<td>Additional remarks or notes regarding the SDN or Entity List alternate name</td>
-</tr>
-
-<tr>
-<td>source_list_url</td>
-<td>Website of the specific agency list</td>
-</tr>
-
+</tbody>
 </table>
 
+
+<ul>
+<li><a href="http://www.bis.doc.gov/entities/default.htm">Entity List</a> -- Parties whose presence in a transaction can trigger a license requirement supplemental to those elsewhere in the Export Administration Regulations (EAR). The list specifies the license requirements and policy that apply to each listed party.</li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th> Field </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> address </td>
+<td> Entity's street/PO address </td>
+</tr>
+<tr>
+<td> alt_names </td>
+<td> Alias names used by the entity </td>
+</tr>
+<tr>
+<td> entity_number </td>
+<td> Unique id assigned by the originating list.</td>
+</tr>
+<tr>
+<td> federal_register_notice </td>
+<td> The official source of information about the parties on this list </td>
+</tr>
+<tr>
+<td> license_requirement </td>
+<td> The license requirement as determined by the Export Administration Regulations </td>
+</tr>
+<tr>
+<td> license_policy </td>
+<td> The policy set forth in the Export Administration Regulations regarding denial </td>
+</tr>
+<tr>
+<td> name </td>
+<td> Entity's name </td>
+</tr>
+<tr>
+<td> programs </td>
+<td> Agency program related to the entity on the list </td>
+</tr>
+<tr>
+<td> standard_order </td>
+<td> Whether or not (Y/N) the <a href="http://www.bis.doc.gov/index.php/policy-guidance/lists-of-parties-of-concern/denied-persons-list/12-policy-guidance/list-parties-of-concern/321-the-denied-persons-list-standard-order">standard order</a> applies to the Denied Party as defined by the Bureau of Industry and Security (BIS)</td>
+</tr>
+<tr>
+<td> start_date  </td>
+<td> The effective date of the entity on the list as defined by the Federal Register Notice </td>
+</tr>
+<tr>
+<td> end_date </td>
+<td> The date on which the entity’s inclusion on the list will be lifted, wavied, or will have expired </td>
+</tr>
+<tr>
+<td> source_list_url </td>
+<td> Location of the original list </td>
+</tr>
+<tr>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
+</tr>
+</tbody>
+</table>
+
+
+<ul>
+<li><a href="http://www.bis.doc.gov/enforcement/unverifiedlist/unverified_parties.html">Unverified List</a> -- End-users who BIS has been unable to verify in prior transactions. The presence of a party on this list in a transaction is a “Red Flag” that should be resolved before proceeding with the transaction.</li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th> Field </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> address </td>
+<td> Entity's street/PO address </td>
+</tr>
+<tr>
+<td> alt_names </td>
+<td> Alias names used by the entity </td>
+</tr>
+<tr>
+<td> name </td>
+<td> Entity's name </td>
+</tr>
+<tr>
+<td> source_list_url </td>
+<td> Location of the original list </td>
+</tr>
+<tr>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>Department of State – Bureau of International Security and Non-proliferation</h4>
+
+<ul>
+<li><a href="http://www.state.gov/t/isn/c15231.htm">Nonproliferation Sanctions</a> -- Parties that have been sanctioned under various statutes. The linked webpage is updated as appropriate, but the Federal Register is the only official and complete listing of nonproliferation sanctions determinations.</li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th> Field </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> federal_register_notice </td>
+<td> The official source of information about the parties on this list </td>
+</tr>
+<tr>
+<td> name </td>
+<td> Entity's name </td>
+</tr>
+<tr>
+<td> programs </td>
+<td> Agency program related to the entity on the list </td>
+</tr>
+<tr>
+<td> start_date  </td>
+<td> The effective date of the entity on the list as defined by the Federal Register Notice </td>
+</tr>
+<tr>
+<td> end_date </td>
+<td> The date on which the entity’s inclusion on the list will be lifted, wavied, or will have expired </td>
+</tr>
+<tr>
+<td> source_list_url </td>
+<td> Location of the original list </td>
+</tr>
+<tr>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>Department of State – Directorate of Defense Trade Controls</h4>
+
+<ul>
+<li><a href="http://www.pmddtc.state.gov/compliance/debar_intro.html">ITAR Debarred List</a> -- Entities and individuals prohibited from participating directly or indirectly in the export of defense articles, including technical data and defense services.  Pursuant to the Arms Export Control Act (AECA) and the International Traffic in Arms Regulations (ITAR), the AECA Debarred List includes persons convicted in court of violating or conspiring to violate the AECA and subject to “statutory debarment” or persons established to have violated the AECA in an administrative proceeding and subject to “administrative debarment.”</li>
+</ul>
+
+
+<table>
+<thead>
+<tr>
+<th> Field </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> alt_names </td>
+<td> Alias names used by the entity </td>
+</tr>
+<tr>
+<td> federal_register_notice </td>
+<td> The official source of information about the parties on this list </td>
+</tr>
+<tr>
+<td> name </td>
+<td> Entity's name </td>
+</tr>
+<tr>
+<td> programs </td>
+<td> Agency program related to the entity on the list </td>
+</tr>
+<tr>
+<td> start_date  </td>
+<td> The effective date of the entity on the list as defined by the Federal Register Notice </td>
+</tr>
+<tr>
+<td> source_list_url </td>
+<td> Location of the original list </td>
+</tr>
+<tr>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
+</tr>
+</tbody>
+</table>
+
+
+<h4>Department of the Treasury – Office of Foreign Assets Control (OFAC)</h4>
+
+<ul>
+<li><p><a href="http://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/fse_list.aspx">Foreign Sanctions Evaders List</a> -- Foreign individuals and entities determined to have violated, attempted to violate, conspired to violate, or caused a violation of U.S. sanctions on Syria or Iran, as well as foreign persons who have facilitated deceptive transactions for or on behalf of persons subject to U.S. Sanctions. Transactions by U.S. persons or within the United States involving Foreign Sanctions Evaders (FSEs) are prohibited.</p></li>
+<li><p><a href="http://www.treasury.gov/resource-center/sanctions/Terrorism-Proliferation-Narcotics/Pages/index.aspx">Palestinian Legislative Council List</a> -- The individuals in this list are Palestinian Legislative Council members who were elected on the party slate of a Foreign Terrorist Organization, Specially Designated Terrorist, or Specially Designated Global Terrorist. They do not, however, appear on the SDN List.  Transactions involving these individuals must be rejected.</p></li>
+<li><p><a href="http://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/ssi_list.aspx">Sectoral Sanctions Identifications List</a> --
+This Sectoral Sanctions Identifications List includes persons determined by OFAC to be operating in sectors of the Russian economy identified by the Secretary of the Treasury pursuant to Executive Order 13662. The prohibitions on dealings related to the persons identified on this list are described in the <a href="http://www.treasury.gov/ofac/downloads/ssi/ssi.pdf">Sectoral Sanctions Identifications List circular</a>.</p></li>
+<li><p><a href="http://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/default.aspx">Specially Designated Nationals List</a> -- Parties who may be prohibited from export transactions based on OFAC’s regulations. The Export Administration Regulations (EAR) require a license for exports or re-exports to any party in any entry on this list that contains any of the suffixes "SDGT", "SDT", "FTO", "IRAQ2" or "NPWMD".”</p></li>
+</ul>
+
+
+<p>Note: The Department of the Treasury data sources share the same output structure</p>
+
+<table>
+<thead>
+<tr>
+<th> Field </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> address </td>
+<td> Entity's street/PO address </td>
+</tr>
+<tr>
+<td> alt_names </td>
+<td> Alias names used by the entity </td>
+</tr>
+<tr>
+<td> citizenships </td>
+<td> Entity's citizenships </td>
+</tr>
+<tr>
+<td> dates_of_birth </td>
+<td> Entity's date of birth </td>
+</tr>
+<tr>
+<td> entity_number </td>
+<td> Unique id assigned by the originating list </td>
+</tr>
+<tr>
+<td> ids </td>
+<td> An array showing specific identification information of the entity. Array fields in <em>italics</em> </td>
+</tr>
+<tr>
+<td> <em>country</em> </td>
+<td> <em>Entity's country</em> </td>
+</tr>
+<tr>
+<td> <em>expiration_date</em> </td>
+<td> <em>The date on which the identification will expire</em> </td>
+</tr>
+<tr>
+<td> <em>issue_date</em> </td>
+<td> <em>The effective date of the identification</em> </td>
+</tr>
+<tr>
+<td> <em>number</em> </td>
+<td> <em>Unique number assigned to the identification</em>  </td>
+</tr>
+<tr>
+<td> <em>type</em> </td>
+<td> <em>Describes the type of identification (i.e. passport, license, etc.)</em> </td>
+</tr>
+<tr>
+<td> name </td>
+<td> Entity's name </td>
+</tr>
+<tr>
+<td> nationalities </td>
+<td> Entity's nationalities </td>
+</tr>
+<tr>
+<td> places_of_birth </td>
+<td> Entity's place of birth </td>
+</tr>
+<tr>
+<td> programs </td>
+<td> Agency program related to the entity on the list </td>
+</tr>
+<tr>
+<td> remarks </td>
+<td> Additional remarks or notes regarding the company, entity or person on the list </td>
+</tr>
+<tr>
+<td> type </td>
+<td> Classification of the entity </td>
+</tr>
+<tr>
+<td> source_list_url </td>
+<td> Location of the original list </td>
+</tr>
+<tr>
+<td> source_information_url </td>
+<td> Information from the Source agency about the list </td>
+</tr>
+<tr>
+<td> title </td>
+<td> Entity's title </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>OFAC provides <a href="http://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/program_tags.aspx">further documentation</a> for the <strong>programs</strong> field.</p>
+
+<h2>ITA’s Process for Consolidating the Screening Lists</h2>
+
+<p>ITA’s data services platform imports each of the nine screening lists once a day.  It then consolidates the lists based on common field types such as name, Federal Register Notice number, and Start Date.  Not all lists contain the same fields so some search results may include more detail than others depending upon the Source agency.  Once the data services platform consolidates the lists, it publishes the <a href="http://api.govwizely.com/consolidated_screening_list/search">CSL API endpoint</a>.</p>
+
+<p>There can be a time lag of up to one day between the time a Source has updated a screening list and when that update appears in the Consolidated Screening List API. Furthermore, the ITA Consolidated Screening List API is not the system of record for these screening lists.  Developers should strongly encourage users to refer to the website of the source agency for further instructions when finding a potential match.  Links to these websites are found above as well as in the “Source List URL” and “Source Information URL” fields that accompany each party returned in the API.</p>
 
         </div>
         </section>

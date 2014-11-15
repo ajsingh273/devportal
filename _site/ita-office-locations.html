@@ -22,17 +22,15 @@
         </br></br>
 		<h3>Available APIs</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
-        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
+        <p class="view"><a href="consolidated-screening-list.html">Consolidated Screening List</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
         <p class="view"><a href="trade-leads.html">Trade Leads</a></p>
-        <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
+        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
                     <div class="content" style="margin-left:-40px;">
-                    <p class="view"><a href="#">FAQs</a></p>
-                    <p class="view"><a href="#">Consolidated Screening List</a></p>
-        			<p class="view"><a href="#">FTA Tariff Rate</a></p>
+                    <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
                     </div>
                 </div>
             </div>
@@ -53,37 +51,36 @@
       </header>
       <section >
       <div style="padding:0 40px;">
-        <h1><a href="ita-office-locations.html">ITA Offices &amp; Centers API</a></h1>
+        <h1>ITA Offices &amp; Centers API</h1>
+
+<h2>Background</h2>
 
 <p>This API provides contact and address information for all of ITA’s domestic and international export assistance centers. Incorporating these listings into directories of business counseling services is one example of how developers can use this API to assist exporters.</p>
 
-<p><a href="http://govwizely.github.io/explorer/#/ita-office-locations" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a></p>
+<p>Test the API using the <a href="http://govwizely.github.io/explorer/#/ita-office-locations">demo search app</a></p>
 
 <h2>Resource URL</h2>
 
-<div><a href="http://api.trade.gov/ita_office_locations/search"><pre>http://api.trade.gov/ita_office_locations/search</pre></a></div>
+<p><a href="http://api.trade.gov/ita_office_locations/search">http://api.trade.gov/ita_office_locations/search</a></p>
 
-
-<h2>Search Parameters</h2>
+<h2>Search Parameters for ITA office locations sources</h2>
 
 <h3>keyword</h3>
 
-<p>Returns office locations for a match within the post or office name fields.</p>
+<p>Returns office locations for a match within the <strong>post</strong> or <strong>office name</strong> fields.</p>
 
 <pre><code>http://api.trade.gov/ita_office_locations/search?q={keyword}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo</pre></a></div>
-
+<p><a href="http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo">http://api.trade.gov/ita_office_locations/search?q=Sao+Paulo</a></p>
 
 <h3>city</h3>
 
 <p>Returns office locations based on city name</p>
 
-<div><a href="http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo"><pre>http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo</pre></a></div>
-
+<p><a href="http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo">http://api.trade.gov/ita_office_locations/search?city=Sao+Paulo</a></p>
 
 <h3>country</h3>
 
@@ -92,10 +89,9 @@
 <pre><code>http://api.trade.gov/ita_office_locations/search?country={country code}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/ita_office_locations/search?country=BR"><pre> http://api.trade.gov/ita_office_locations/search?country=BR</pre></a></div>
-
+<p><a href="http://api.trade.gov/ita_office_locations/search?country=BR">http://api.trade.gov/ita_office_locations/search?country=BR</a></p>
 
 <h3>state</h3>
 
@@ -105,21 +101,20 @@
 ={state postal code abbreviation&gt;}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/ita_office_locations/search?state=TN"><pre>http://api.trade.gov/ita_office_locations/search?state=TN</pre></a></div>
-
+<p><a href="http://api.trade.gov/ita_office_locations/search?state=TN">http://api.trade.gov/ita_office_locations/search?state=TN</a></p>
 
 <h3>size + offset</h3>
 
-<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
+<p>The <strong>size</strong> parameter allows you to configure the maximum amount of hits to be returned. The <strong>offset</strong> parameter defines the offset from the first result you want to fetch.</p>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
 <div><a href="http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1"><pre>http://api.trade.gov/ita_office_locations/search?country=BR&size=1&offset=1</pre></a></div>
 
 
-<h2>Data Elements</h2>
+<h3>Data Elements</h3>
 
 <table>
 <thead>

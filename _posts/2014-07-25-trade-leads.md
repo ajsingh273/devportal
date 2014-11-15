@@ -5,7 +5,9 @@ title: Trade Leads API
 published: true
 ---
 
-#<a href="trade-leads.html">Trade Leads API</a>
+#Trade Leads API
+
+## Background
 
 The Trade Leads API provides contract opportunities for U.S. businesses selling their products and services overseas. These leads come from a variety of sources and we continue to expand the number of leads available.
 
@@ -21,54 +23,54 @@ Developers can use this API to keep businesses aware of the latest leads in part
 
 The output format for this API is JSON.  Resource URL and Search Parameters can be found towards the bottom of this page.
 
-<a href="http://govwizely.github.io/explorer/#/trade-leads" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a>
+Test the API using the [demo search app](http://govwizely.github.io/explorer/#/trade-leads)
 
 ##Resource URL
 
-<div><a href="http://api.trade.gov/trade_leads/search"><pre>http://api.trade.gov/trade_leads/search</pre></a></div>
+[http://api.trade.gov/trade_leads/search](http://api.trade.gov/trade_leads/search)
 
 ##Search Parameters for all leads
 
 ###keyword
 
-Searches for a match within the title and description fields.
+Searches for a match within the **title** and **description** fields.
 
     http://api.trade.gov/trade_leads/search?q={term}
 
-#####Example:
+**_Example_**
 
-<div><a href="http://api.trade.gov/trade_leads/search?q=electrical"><pre>http://api.trade.gov/trade_leads/search?q=electrical</pre></a></div>
+[http://api.trade.gov/trade_leads/search?q=electrical](http://api.trade.gov/trade_leads/search?q=electrical)
 
 ###industries
 
-Returns industry that the lead relates to.  Note:  This method allows you to search for multiple industries (plural) but will only return one industry (singular) per lead.  Also, this method will soon be updated to limit the search to controlled industry names.
+Returns **industry** that the lead relates to.  Note:  This method allows you to search for multiple industries (plural) but will only return one industry (singular) per lead.  Also, this method will soon be updated to limit the search to controlled industry names.
 
     http://api.trade.gov/trade_leads/search?industries={term}
 
-#####Example:
+**_Example_**
 
-<div><a href="http://api.trade.gov/trade_leads/search?industries=agribusiness"><pre>http://api.trade.gov/trade_leads/search?industries=agribusiness</pre></a></div>
+[http://api.trade.gov/trade_leads/search?industries=agribusiness](http://api.trade.gov/trade_leads/search?industries=agribusiness)
 
 ###countries
 
-Returns location of lead based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).  Note:  This method allows you to search for multiple countries (plural) but will only return one country (singular) per lead.  
+Returns **location** of lead based on ISO [alpha-2 country codes](http://www.iso.org/iso/home/standards/country_codes/country_names_and_code_elements.htm).  Note:  This method allows you to search for multiple countries (plural) but will only return one country (singular) per lead.  
 
     http://api.trade.gov/trade_leads/search?countries={country code}
     
-#####Example:
+**_Example_**
 
-<div><a href="http://api.trade.gov/trade_leads/search?countries=MX,CA,GB"><pre>http://api.trade.gov/trade_leads/search?countries=MX,CA,GB</pre></a></div>
+[http://api.trade.gov/trade_leads/search?countries=MX,CA,GB](http://api.trade.gov/trade_leads/search?countries=MX,CA,GB)
 
 ###size + offset
 
-The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.
+The **size** parameter allows you to configure the maximum amount of hits to be returned. The **offset** parameter defines the offset from the first result you want to fetch.
 
-#####Example:
+**_Example_**
 
-<div><a href="http://api.trade.gov/trade_leads/search?country=BR&size=1&offset=1"><pre>http://api.trade.gov/trade_leads/search?country=BR&size=1&offset=1</pre></a></div>
+[http://api.trade.gov/trade_leads/search?country=BR&size=1&offset=1](http://api.trade.gov/trade_leads/search?country=BR&size=1&offset=1)
 
 
-## Return Values for All Leads
+###Return Values for All Leads
 
 
 | Field	| Description |
@@ -160,3 +162,5 @@ The [UK Government](https://www.contractsfinder.businesslink.gov.uk/) provides p
 UK leads are subject to their open government license located at:
 
 [http://www.nationalarchives.gov.uk/doc/open-government-licence/](http://www.nationalarchives.gov.uk/doc/open-government-licence/)
+
+

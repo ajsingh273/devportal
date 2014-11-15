@@ -22,17 +22,15 @@
         </br></br>
 		<h3>Available APIs</h3>
         <p class="view"><a href="market-research-library.html">Market Research Library</a></p>
-        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
+        <p class="view"><a href="consolidated-screening-list.html">Consolidated Screening List</a></p>
         <p class="view"><a href="trade-events.html">Trade Events</a></p>
         <p class="view"><a href="trade-leads.html">Trade Leads</a></p>
-        <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
+        <p class="view"><a href="ita-office-locations.html">ITA Offices & Centers</a></p>
 <div class="demo-frame" style="text-indent:40px;">
                 <div id="demo-simplest">
                     <a class="expander"  href="#">More APIs...</a>
                     <div class="content" style="margin-left:-40px;">
-                    <p class="view"><a href="#">FAQs</a></p>
-                    <p class="view"><a href="#">Consolidated Screening List</a></p>
-        			<p class="view"><a href="#">FTA Tariff Rate</a></p>
+                    <p class="view"><a href="trade-news-articles.html">Trade News & Articles</a></p>
                     </div>
                 </div>
             </div>
@@ -53,20 +51,19 @@
       </header>
       <section >
       <div style="padding:0 40px;">
-        <h1><a href="trade-events.html">Trade Events API</a></h1>
+        <h1>Trade Events API</h1>
+
+<h2>Background</h2>
 
 <p>The Trade Events API provides data on events for U.S. businesses interested in selling their products and services overseas.  These events include industry conferences, webinars, lectures and trade missions organized by the U.S. Dept. of Commerce. Developers can use this API to keep businesses aware of the latest events in their industry or location.</p>
 
-<p>The output format for this API is JSON.</p>
-
-<p><a href="http://govwizely.github.io/explorer/#/trade-events" class="btn btn-blue btn-large hero-box-button">Open in Explorer</a></p>
+<p>Test the API using the <a href="http://govwizely.github.io/explorer/#/trade-events">demo search app</a></p>
 
 <h2>Resource URL</h2>
 
-<div><a href="http://api.trade.gov/trade_events/search"><pre>http://api.trade.gov/trade_events/search</pre></a></div>
+<p><a href="http://api.trade.gov/trade_events/search">http://api.trade.gov/trade_events/search</a></p>
 
-
-<h2>Search Parameters</h2>
+<h2>Search Parameters for trade events sources</h2>
 
 <h3>keyword</h3>
 
@@ -75,10 +72,9 @@
 <pre><code>http://api.trade.gov/trade_events/search?q={term}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/trade_events/search?q=computer"><pre>http://api.trade.gov/trade_events/search?q=computer</pre></a></div>
-
+<p><a href="http://api.trade.gov/trade_events/search?q=computer">http://api.trade.gov/trade_events/search?q=computer</a></p>
 
 <h3>industry</h3>
 
@@ -87,10 +83,9 @@
 <pre><code>http://api.trade.gov/trade_events/search?industry={term}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/trade_events/search?industry=Chemical"><pre>http://api.trade.gov/trade_events/search?industry=Chemical</pre></a></div>
-
+<p><a href="http://api.trade.gov/trade_events/search?industry=Chemical">http://api.trade.gov/trade_events/search?industry=Chemical</a></p>
 
 <h3>countries</h3>
 
@@ -99,21 +94,19 @@
 <pre><code>http://api.trade.gov/trade_events/search?countries={country code}
 </code></pre>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/trade_events/search?countries=MX"><pre>http://api.trade.gov/trade_events/search?countries=MX</pre></a></div>
-
+<p><a href="http://api.trade.gov/trade_events/search?countries=MX">http://api.trade.gov/trade_events/search?countries=MX</a></p>
 
 <h3>size + offset</h3>
 
-<p>The size parameter allows you to configure the maximum amount of hits to be returned. The offset parameter defines the offset from the first result you want to fetch.</p>
+<p>The <strong>size</strong> parameter allows you to configure the maximum amount of hits to be returned. The <strong>offset</strong> parameter defines the offset from the first result you want to fetch.</p>
 
-<h5>Example:</h5>
+<p><strong><em>Example</em></strong></p>
 
-<div><a href="http://api.trade.gov/trade_events/search?country=BR&size=1&offset=1"><pre>http://api.trade.gov/trade_events/search?country=BR&size=1&offset=1</pre></a></div>
+<p><a href="http://api.trade.gov/trade_events/search?country=BR&amp;size=1&amp;offset=1">http://api.trade.gov/trade_events/search?country=BR&amp;size=1&amp;offset=1</a></p>
 
-
-<h2>Return Values</h2>
+<h3>Return Values</h3>
 
 <table>
 <thead>
