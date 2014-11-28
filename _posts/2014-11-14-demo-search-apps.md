@@ -16,4 +16,3 @@ Each API has an associated search app for demonstration purposes:
 * [Trade Events](http://internationaltradeadministration.github.io/explorer/#/trade-events)
 * [Trade Leads](http://internationaltradeadministration.github.io/explorer/#/trade-leads)
 * [ITA Offices & Centers](http://internationaltradeadministration.github.io/explorer/#/ita-office-locations)
-* [Trade News & Articles](#)
