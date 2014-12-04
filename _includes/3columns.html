@@ -1,0 +1,114 @@
+<style>
+
+
+#content {
+	width: 120px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 120px; 
+	float: left;
+	padding: 5px 15px;
+	
+}
+
+#sidebar {
+	width: 120px;
+	padding: 5px 15px;
+	float: left;
+}
+
+
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	
+
+
+}
+
+#header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+</style>
+
+
+
+		
+	<div id="content">
+		<center><p><img   src="images/Guidance.gif" ></p>
+		<h3>Guidance</h3>
+		<p>If you are not a developer get guidance on integrating ITA's data into your Web site or mobile app.</p>
+		</center>
+	</div>
+	
+	<div id="middle">
+		<center><p><img   src="images/Apps.gif" ></p>
+		<h3>App Gallery</h3>
+		<p>Get ideas from other organizations that have used ITA's data in their Web sites and mobile apps.</p>
+		</center>
+		</div>
+
+	<div id="sidebar">
+		<center><p><img   src="images/Changes.gif" ></p>
+		<h3>Change Log</h3>
+		<p>Find out about the latest updates to make sure you're getting the most out of the APIs.</p>
+		</center>
+		</div>
+	
+

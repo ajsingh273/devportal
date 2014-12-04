@@ -90,14 +90,14 @@ blockquote {
 
 
 #info {
-max-width:400px;	
+max-width:500px;	
 display: inline-block;
 float:left;
-padding-right: 25px;
+padding-right: 5px;
 }
 
 #side {
-width:200px;	
+width:150px;	
 display: inline-block;
 float:left;
 }
@@ -292,6 +292,16 @@ font-weight:normal;
 section p a {
 color: #08c;
 font-weight:normal;
+}
+
+#intro img {
+border: none;
+background:none;
+   padding: 0;
+
+display: block;
+float:none;
+margin-right:0px;
 }
 
 .content {display:none;}
