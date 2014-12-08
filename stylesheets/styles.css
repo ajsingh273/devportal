@@ -90,14 +90,14 @@ blockquote {
 
 
 #info {
-max-width:500px;	
+max-width:400px;	
 display: inline-block;
 float:left;
-padding-right: 5px;
+padding-right: 25px;
 }
 
 #side {
-width:150px;	
+width:200px;	
 display: inline-block;
 float:left;
 }
