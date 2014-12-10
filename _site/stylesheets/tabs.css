@@ -113,3 +113,12 @@ margin-bottom:40px;
 .tabs #step3radio:checked ~ #step3 {
   display: block;
 }
+
+@media print, screen and (max-width: 480px) {
+  .tabs input[type='radio'] + label {
+    width: 100%;
+  }
+
+  
+    
+}

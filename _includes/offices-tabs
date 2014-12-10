@@ -11,7 +11,7 @@
 		<p>The output format for this API is JSON.  Test the API using the <a href="http://internationaltradeadministration.github.io/explorer/#/ita-office-locations">demo search app</a>.</p>
 	</div>
 	<div class="pane" id="step2">
-		<p>ITA centers are often colocated with offices from the State Department or other trade agencies.  Therefore, the addresses change with some regularity.  You can be confident that when you use this resource to help your customers it will be accurate.</p>
+		<p>ITA centers are often collocated with offices from the State Department or other trade agencies.  Therefore, the addresses change with some regularity.  You can be confident that when you use this resource to help your customers it will be accurate.</p>
 	</div>
 	<div class="pane" id="step3">
 		<p>The API provides methods for accessing the city, state, and country for each export assistance center. This enables you to use the listing of ITA centers to augment a directory of business counseling services. Business.usa.gov publishes the ITA centers alongside Small Business Development Centers (SBDCs), SBA District Offices, and Women’s Business Centers.</p>
