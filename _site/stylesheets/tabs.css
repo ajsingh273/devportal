@@ -50,29 +50,10 @@ margin-bottom:40px;
   margin-bottom: 1em;
 }
 .tabs input[type='radio'] + label:before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: -1.5em;
-  width: 0;
-  height: 0;
-  border: .75em solid transparent;
-  border-left-color: #ccc;
+
 }
 .tabs input[type='radio'] + label:after {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: -1.5em;
-  margin-right: 1px;
-  width: 0;
-  height: 0;
-  border: .75em solid transparent;
-  border-left-color: white;
+
 }
 .tabs input[type='radio'] + label.first {
   border-radius: 0 ;
@@ -118,6 +99,15 @@ margin-bottom:40px;
   .tabs input[type='radio'] + label {
     width: 100%;
   }
+  
+.tabs input[type='radio'] + label.first {
+  border-right: 1px solid #ccc;
+  border-radius: 0 ;
+}
+.tabs input[type='radio'] + label.last {
+  border-right: 1px solid #ccc;
+  border-radius: 0 ;
+}
 
   
     
