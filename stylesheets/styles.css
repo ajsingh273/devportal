@@ -302,6 +302,11 @@ color: #08c;
 font-weight:normal;
 }
 
+
+#body-content {
+padding:0 25px;
+}
+
 #intro img {
 border: none;
 background:none;
