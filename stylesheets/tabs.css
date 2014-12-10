@@ -75,11 +75,11 @@ margin-bottom:40px;
   border-left-color: white;
 }
 .tabs input[type='radio'] + label.first {
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 ;
 }
 .tabs input[type='radio'] + label.last {
   border-right: 1px solid #ccc;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 ;
 }
 .tabs input[type='radio'] + label.last:before, .tabs input[type='radio'] + label.last:after {
   display: none;
