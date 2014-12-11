@@ -1,10 +1,8 @@
-</br>
-
 <div class="tabs">
 
-<input checked="checked" id="step1radio" name="radio" type="radio" /><label class="first" for="step1radio"><img   src="images/background.png" alt="background" width="40" style=" box-shadow: 0;padding: 2px;background: none;border: none;">Background</label>
-<input id="step2radio" name="radio" type="radio" /><label class="first" for="step2radio"><img   src="images/why.png" alt="why" width="40" style=" box-shadow: 0;padding: 2px;background: none;border: none;">Why This Data Matters</label>
-<input id="step3radio" name="radio" type="radio" /><label class="last" for="step3radio"><img   src="images/ideas.png" alt="ideas" width="40" style=" box-shadow: 0;padding: 2px;background: none;border: none;">Ideas for Using the Data</label>
+<input checked="checked" id="step1radio" name="radio" type="radio" /><label class="first" for="step1radio"><img src="images/background.png" alt="background">Background</label>
+<input id="step2radio" name="radio" type="radio" /><label class="first" for="step2radio"><img src="images/why.png" alt="why">Why This Data Matters</label>
+<input id="step3radio" name="radio" type="radio" /><label class="last" for="step3radio"><img src="images/ideas.png" alt="ideas">Ideas for Using the Data</label>
 
 	<div class="pane" id="step1">
 		<p>The Trade Leads API provides contract opportunities for U.S. businesses selling their products and services overseas. These leads come from a variety of sources and we continue to expand the number of leads available.</p>
@@ -16,7 +14,6 @@
 	</div>
 	<div class="pane" id="step3">
 		<p>Use this API to keep businesses aware of the latest leads in particular industries or locations.<p>
-		
 		<p>They can also enhance the value of the leads by incorporating reports from ITA’s Market Research Library or Trade News & Articles APIs.</p>
 	</div>
 
