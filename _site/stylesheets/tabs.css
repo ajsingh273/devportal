@@ -25,13 +25,7 @@
   background: white;
   border-radius: 10px;
 margin-bottom:40px;
-margin-top: 50px;
 }
-
-.tabs img {
-box-shadow: 0;padding: 2px;background: none;border: none;width:40px;
-}
-
 .tabs input[type='radio'] {
   display: none;
 }
