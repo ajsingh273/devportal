@@ -379,6 +379,16 @@ background:none;
 margin-right:0;
 }
 
+
+#guidance-for-information-users {
+background:#F9FCFD; 
+}
+
+.guide {
+padding:0 25px; 
+}
+
+
 .imageBox {
 		position: relative;
 		float: right;
