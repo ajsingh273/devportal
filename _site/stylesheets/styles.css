@@ -302,6 +302,9 @@ color: #08c;
 font-weight:normal;
 }
 
+#body-layout {
+width:817px;
+}
 
 #body-content {
 padding:0 25px;
